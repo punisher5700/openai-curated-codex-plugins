@@ -9,6 +9,11 @@
 - `plugins/superpowers`
 - `plugins/salesforce-skills`
 
+## Cross-tool bundles
+
+- `claude/`
+- `gemini/`
+
 ## Salesforce Skills plugin extras
 
 Inside `plugins/salesforce-skills`:

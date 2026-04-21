@@ -35,6 +35,11 @@ Documentation:
 - `docs/DEPENDENCIES.md`
 - `docs/REPO-CONTENTS.md`
 
+Cross-tool bundles:
+
+- `claude/`
+- `gemini/`
+
 Helper files:
 
 - `scripts/install-dependencies.sh`
