@@ -34,4 +34,5 @@ Helper files:
 
 - `scripts/install-dependencies.sh`
 - `scripts/check-dependencies.sh`
+- `scripts/setup-on-new-machine.sh`
 - `config/config.toml.example`

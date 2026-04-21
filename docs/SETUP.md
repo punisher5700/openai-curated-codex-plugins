@@ -16,6 +16,20 @@ mkdir -p ~/.codex/marketplaces
 git clone https://github.com/punisher5700/openai-curated-codex-plugins.git ~/.codex/marketplaces/openai-curated
 ```
 
+## Fastest Setup
+
+On a new machine, you can bootstrap most of the setup with:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/punisher5700/openai-curated-codex-plugins/main/scripts/setup-on-new-machine.sh | bash
+```
+
+Or, after cloning:
+
+```bash
+bash scripts/setup-on-new-machine.sh
+```
+
 ## Install or Verify Dependencies
 
 Run:
