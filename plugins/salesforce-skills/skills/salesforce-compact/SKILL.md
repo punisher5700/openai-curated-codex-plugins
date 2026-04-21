@@ -1,6 +1,6 @@
 ---
 name: salesforce-compact
-description: "Use for low-token Salesforce development help across Apex, LWC, Flow, integrations, deployments, and debugging when the goal is to minimize prompt and response size without losing production-safe guidance. Use when Codex should assume standard Salesforce engineering defaults, answer tersely, prefer concrete fixes over long explanations, and load deeper Salesforce references only when needed."
+description: "Use for low-token Salesforce development help across Apex, LWC, Flow, integrations, deployments, and debugging when the goal is to minimize prompt and response size without losing production-safe guidance. Use when Codex should answer tersely, prefer fix/risk/verify output, avoid speculation, assume standard Salesforce engineering defaults, and load deeper Salesforce references only when needed."
 ---
 
 # Salesforce Compact
@@ -17,6 +17,12 @@ Produce short, implementation-first Salesforce guidance while preserving correct
 - integrations
 - deployment and DevOps
 - debugging and code review
+
+Default target:
+
+- minimum useful tokens
+- one best answer
+- no speculative filler
 
 ## Truth Policy
 
@@ -50,6 +56,7 @@ Unless the user asks for depth, do all of the following:
 5. Prefer examples, diffs, or code over theory.
 6. Escalate detail only when architecture risk, limits, security, or integration boundaries require it.
 7. Prefer verified local evidence over remembered platform behavior.
+8. Prefer `fix / risk / verify` as the default answer shape.
 
 ## Assumed Salesforce Defaults
 
@@ -144,6 +151,40 @@ You may answer from standard platform knowledge, but:
   3. optional optimization
   4. quick verification
 
+## Ultra-Compact Mode
+
+When the user wants the fewest possible tokens, tighten output further:
+
+- use flat bullets over prose
+- default to `fix / risk / verify`
+- omit any section that adds no value
+- ask for more evidence only if missing evidence blocks a reliable answer
+- choose one best path, not a menu of options
+
+For ultra-compact replies:
+
+- `Fix:` one short block
+- `Risk:` one line if relevant
+- `Verify:` one or two checks
+
+For debugging:
+
+- `Cause:` one line
+- `Fix:` one short block
+- `Verify:` one short line
+
+For review:
+
+- `Issue:` one line
+- `Fix:` one line
+- `Risk:` one line if high impact
+
+For architecture:
+
+- `Use:` chosen pattern
+- `Why:` one line
+- `Risk:` one line
+
 ## Verification Gate
 
 Before finalizing any substantive Salesforce answer, perform a short self-check.
@@ -219,10 +260,12 @@ Use when reviewing Salesforce code:
 
 - Be direct.
 - Prefer short paragraphs or flat bullets.
+- Prefer flat bullets in ultra-compact mode.
 - Avoid Salesforce marketing language.
 - Avoid repeating platform basics the user already implied.
 - Do not add optional ideas unless they materially improve correctness or scale.
 - If the user asks for “best”, choose one path rather than listing many.
+- Code over prose when code is faster.
 
 ## Self-Critique Pass
 
@@ -264,3 +307,5 @@ Increase detail only when:
 - Do not load every Salesforce reference file just because the skill triggered.
 - Do not bluff missing org context.
 - Do not use confident language for unverified repo facts.
+- Do not provide multiple options unless the tradeoff is required.
+- Do not pad the answer.
