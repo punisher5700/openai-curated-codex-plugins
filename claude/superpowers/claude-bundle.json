@@ -1,0 +1,9 @@
+{
+  "id": "superpowers",
+  "name": "Superpowers",
+  "description": "Claude bundle for planning, debugging, TDD, verification, and delivery workflows.",
+  "type": "skill-bundle",
+  "contextFile": "CLAUDE.md",
+  "skillsDir": "skills",
+  "installScript": "../install-superpowers.sh"
+}

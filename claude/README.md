@@ -14,6 +14,18 @@ It provides:
 bash claude/install-salesforce-skills.sh
 ```
 
+## Install All Claude Bundles
+
+```bash
+bash claude/install-all.sh
+```
+
+Bundle catalog:
+
+```bash
+claude/claude-bundles.json
+```
+
 That syncs the bundled skills into:
 
 ```bash

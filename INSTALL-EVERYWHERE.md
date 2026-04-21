@@ -25,8 +25,8 @@ Codex uses native plugins.
 Claude and Gemini do not load Codex plugins directly, so this repo provides the closest equivalent for each:
 
 - Codex: plugins + skills + MCP configuration
-- Claude: skills bundle + optional project MCP file
-- Gemini: extension-style bundle + skills
+- Claude: bundle manifests + skills + optional project MCP file
+- Gemini: extension manifests + skills
 
 That means the behavior is aligned across tools, but the packaging format is different.
 
@@ -51,6 +51,12 @@ Codex-specific notes:
 From the repo root:
 
 ```bash
+bash claude/install-all.sh
+```
+
+Or install individually:
+
+```bash
 bash claude/install-salesforce-skills.sh
 bash claude/install-superpowers.sh
 ```
@@ -63,13 +69,20 @@ bash claude/create-project-mcp.sh /absolute/path/to/your/project
 
 Claude result:
 
-- Salesforce skill bundle installed
-- Superpowers skill bundle installed
+- Salesforce bundle installed
+- Superpowers bundle installed
 - optional `.mcp.json` created for a target project
+- bundle catalog available in `claude/claude-bundles.json`
 
 ## Install On Gemini
 
 From the repo root:
+
+```bash
+bash gemini/install-all.sh
+```
+
+Or install individually:
 
 ```bash
 bash gemini/install-salesforce-skills-extension.sh
@@ -81,6 +94,7 @@ Gemini result:
 - Salesforce extension-style bundle installed
 - Superpowers extension-style bundle installed
 - skills copied in the Gemini-compatible layout provided by this repo
+- bundle catalog available in `gemini/gemini-bundles.json`
 
 ## What Is Equivalent Across All Three
 

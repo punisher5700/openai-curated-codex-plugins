@@ -1,0 +1,18 @@
+{
+  "bundles": [
+    {
+      "id": "salesforce-skills",
+      "name": "Salesforce Skills",
+      "type": "gemini-extension-bundle",
+      "entry": "salesforce-skills-extension/gemini-extension.json",
+      "install": "install-salesforce-skills-extension.sh"
+    },
+    {
+      "id": "superpowers",
+      "name": "Superpowers",
+      "type": "gemini-extension-bundle",
+      "entry": "superpowers-extension/gemini-extension.json",
+      "install": "install-superpowers-extension.sh"
+    }
+  ]
+}
