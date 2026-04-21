@@ -22,3 +22,10 @@ Marketplace catalog:
 Codex config points to this marketplace from:
 
 - `~/.codex/config.toml`
+
+Documentation:
+
+- `docs/SETUP.md`
+- `docs/MCP-SERVERS.md`
+- `docs/DEPENDENCIES.md`
+- `docs/REPO-CONTENTS.md`
