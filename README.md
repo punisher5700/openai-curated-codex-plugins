@@ -8,6 +8,13 @@ Purpose:
 - preserve plugin source across restarts and cache refreshes
 - make recovery easy if Codex plugin loading changes in the future
 
+Recommended Salesforce developer profile:
+
+- `salesforce-skills`
+- `github`
+- `superpowers`
+- `salesforce-skills` MCP
+
 Plugins currently included:
 
 - `superpowers`

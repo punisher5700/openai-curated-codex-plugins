@@ -9,6 +9,11 @@ Some plugins in this repository expect tools to be available on the machine.
 - `git`
 - Codex app
 
+### Recommended Salesforce profile
+
+- `docker`
+- `gh`
+
 ### Code Review Graph
 
 - `code-review-graph`

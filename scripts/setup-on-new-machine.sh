@@ -49,19 +49,11 @@ source = "'"$TARGET_DIR"'"' '[marketplaces.openai-curated]'
 append_if_missing '[plugins."superpowers@openai-curated"]
 enabled = true' '[plugins."superpowers@openai-curated"]'
 
-append_if_missing '[plugins."caveman@openai-curated"]
-enabled = true' '[plugins."caveman@openai-curated"]'
-
 append_if_missing '[plugins."salesforce-skills@openai-curated"]
 enabled = true' '[plugins."salesforce-skills@openai-curated"]'
 
-append_if_missing '[plugins."code-review-graph@openai-curated"]
-enabled = true' '[plugins."code-review-graph@openai-curated"]'
-
-append_if_missing '[mcp_servers.code-review-graph]
-command = "code-review-graph"
-args = ["serve"]
-type = "stdio"' '[mcp_servers.code-review-graph]'
+append_if_missing '[plugins."github@openai-curated"]
+enabled = true' '[plugins."github@openai-curated"]'
 
 append_if_missing '[mcp_servers.salesforce-skills]
 command = "docker"

@@ -52,17 +52,33 @@ source = "/Users/<your-user>/.codex/marketplaces/openai-curated"
 [plugins."superpowers@openai-curated"]
 enabled = true
 
-[plugins."caveman@openai-curated"]
-enabled = true
-
 [plugins."salesforce-skills@openai-curated"]
 enabled = true
 
-[plugins."code-review-graph@openai-curated"]
+[plugins."github@openai-curated"]
 enabled = true
+
+[mcp_servers.salesforce-skills]
+command = "docker"
+args = [
+  "run",
+  "-i",
+  "--rm",
+  "-v",
+  "/Users/<your-user>/.codex/skill-bundles/salesforce:/skills:ro",
+  "mcp-skill-hub",
+]
+type = "stdio"
 ```
 
 Replace `<your-user>` with the account name on that machine.
+
+This is the recommended minimal setup for Salesforce development:
+
+- `salesforce-skills`
+- `github`
+- `superpowers`
+- `salesforce-skills` MCP
 
 You can also start from:
 
