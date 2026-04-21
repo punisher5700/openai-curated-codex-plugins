@@ -3,6 +3,7 @@
 ## Marketplace
 
 - `.agents/plugins/marketplace.json`
+- `INSTALL-EVERYWHERE.md`
 
 ## Plugins
 

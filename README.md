@@ -30,6 +30,7 @@ Codex config points to this marketplace from:
 
 Documentation:
 
+- `INSTALL-EVERYWHERE.md`
 - `docs/SETUP.md`
 - `docs/MCP-SERVERS.md`
 - `docs/DEPENDENCIES.md`
