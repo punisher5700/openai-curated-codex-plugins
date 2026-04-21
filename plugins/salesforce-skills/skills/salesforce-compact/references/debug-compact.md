@@ -23,3 +23,9 @@ Compact response format:
 - root cause
 - fix
 - quick verify step
+
+Evidence discipline:
+
+- confirmed from logs or code when possible
+- inferred only when evidence is incomplete
+- unknown if the failure depends on org config not provided
