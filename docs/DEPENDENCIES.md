@@ -17,6 +17,14 @@ Used by:
 
 - `plugins/code-review-graph/.mcp.json`
 
+### Graphify
+
+- `graphify`
+
+Used by:
+
+- `plugins/graphify/.mcp.json`
+
 ### GitHub workflows
 
 - `gh` (GitHub CLI)

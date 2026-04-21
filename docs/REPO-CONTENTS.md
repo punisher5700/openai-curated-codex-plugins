@@ -10,6 +10,7 @@
 - `plugins/caveman`
 - `plugins/salesforce-skills`
 - `plugins/code-review-graph`
+- `plugins/graphify`
 
 ## Salesforce Skills plugin extras
 

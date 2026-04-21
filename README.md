@@ -14,6 +14,7 @@ Plugins currently included:
 - `caveman`
 - `salesforce-skills`
 - `code-review-graph`
+- `graphify`
 
 Marketplace catalog:
 

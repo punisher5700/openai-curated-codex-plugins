@@ -16,6 +16,18 @@ It expects the `code-review-graph` executable to be available on the machine and
 code-review-graph serve
 ```
 
+### Graphify
+
+The plugin bundle includes:
+
+- `plugins/graphify/.mcp.json`
+
+It expects the `graphify` executable to be available on the machine and launches:
+
+```bash
+graphify . --mcp
+```
+
 ## Machine-level MCP examples
 
 Some setups may still use `~/.codex/config.toml` for machine-level MCP server registration.

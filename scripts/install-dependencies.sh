@@ -31,4 +31,12 @@ else
   echo "Install it using the method required by that project, then rerun scripts/check-dependencies.sh"
 fi
 
+if command -v graphify >/dev/null 2>&1; then
+  echo "Already installed: graphify"
+else
+  echo "graphify is not installed."
+  echo "Attempting Python install via pip..."
+  python3 -m pip install graphifyy -q 2>/dev/null || python3 -m pip install graphifyy -q --break-system-packages || true
+fi
+
 echo "Dependency install script finished."

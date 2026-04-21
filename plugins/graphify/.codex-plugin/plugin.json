@@ -1,0 +1,41 @@
+{
+  "name": "graphify",
+  "version": "0.1.0",
+  "description": "Turn files into a knowledge graph with HTML, JSON, audit trail, and MCP-backed graph access.",
+  "author": {
+    "name": "Dinesh Choudhary",
+    "url": "https://github.com/punisher5700"
+  },
+  "homepage": "https://github.com/punisher5700/openai-curated-codex-plugins",
+  "repository": "https://github.com/punisher5700/openai-curated-codex-plugins",
+  "license": "MIT",
+  "keywords": [
+    "graphify",
+    "knowledge-graph",
+    "graph",
+    "research",
+    "analysis",
+    "mcp"
+  ],
+  "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
+  "interface": {
+    "displayName": "Graphify",
+    "shortDescription": "Build knowledge graphs from files, docs, code, papers, and images",
+    "longDescription": "Use Graphify to turn folders of code, documents, papers, and media into a navigable knowledge graph with audit trail, graph outputs, and MCP-backed access.",
+    "developerName": "Dinesh Choudhary",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Run Graphify on this folder and explain the key communities and relationships."
+    ],
+    "brandColor": "#0F766E",
+    "composerIcon": "./assets/graphify-small.svg",
+    "logo": "./assets/graphify.svg",
+    "screenshots": []
+  }
+}

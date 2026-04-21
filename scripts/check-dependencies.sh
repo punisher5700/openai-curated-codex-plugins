@@ -19,6 +19,7 @@ check_cmd git
 check_cmd gh
 check_cmd docker
 check_cmd code-review-graph
+check_cmd graphify
 
 echo
 echo "Checking GitHub auth..."
