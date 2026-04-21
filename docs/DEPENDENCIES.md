@@ -14,22 +14,6 @@ Some plugins in this repository expect tools to be available on the machine.
 - `docker`
 - `gh`
 
-### Code Review Graph
-
-- `code-review-graph`
-
-Used by:
-
-- `plugins/code-review-graph/.mcp.json`
-
-### Graphify
-
-- `graphify`
-
-Used by:
-
-- `plugins/graphify/.mcp.json`
-
 ### GitHub workflows
 
 - `gh` (GitHub CLI)

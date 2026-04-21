@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Code Review Graph icon">
-  <rect width="64" height="64" rx="16" fill="#111827"/>
-  <circle cx="18" cy="20" r="6" fill="#60A5FA"/>
-  <circle cx="46" cy="18" r="6" fill="#34D399"/>
-  <circle cx="32" cy="45" r="7" fill="#FBBF24"/>
-  <path d="M23 22.5 40 19.5M21 24.5 29 39M42.5 22.5 35.5 38.5" stroke="#E5E7EB" stroke-width="3" stroke-linecap="round"/>
-</svg>

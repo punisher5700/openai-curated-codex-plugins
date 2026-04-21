@@ -18,10 +18,7 @@ Recommended Salesforce developer profile:
 Plugins currently included:
 
 - `superpowers`
-- `caveman`
 - `salesforce-skills`
-- `code-review-graph`
-- `graphify`
 
 Marketplace catalog:
 
