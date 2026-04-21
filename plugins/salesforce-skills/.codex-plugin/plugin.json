@@ -1,0 +1,67 @@
+{
+  "name": "salesforce-skills",
+  "version": "0.1.0",
+  "description": "End-to-end Salesforce architecture, implementation, debugging, integration, and cross-cloud guidance for platform, Agentforce, Data Cloud, Marketing Cloud, and MuleSoft scenarios.",
+  "author": {
+    "name": "Dinesh Choudhary",
+    "url": "https://github.com/dineshchoudhary"
+  },
+  "homepage": "https://github.com/dineshchoudhary",
+  "repository": "https://github.com/dineshchoudhary",
+  "license": "MIT",
+  "keywords": [
+    "salesforce",
+    "apex",
+    "lwc",
+    "flow",
+    "architecture",
+    "crm",
+    "integration",
+    "agentforce",
+    "data-cloud",
+    "marketing-cloud",
+    "mulesoft",
+    "debugging",
+    "security",
+    "deployment",
+    "ci-cd",
+    "flow",
+    "lightning-web-components",
+    "experience-cloud",
+    "commerce-cloud",
+    "devops",
+    "cpq",
+    "field-service",
+    "crm-analytics",
+    "revenue-cloud",
+    "heroku",
+    "slack",
+    "industries",
+    "nonprofit-cloud",
+    "health-cloud",
+    "financial-services-cloud",
+    "education-cloud"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Salesforce Skills",
+    "shortDescription": "Architecture, security, deployment, integrations, debugging, and cross-cloud guidance for Salesforce",
+    "longDescription": "Use Salesforce Skills for Apex, LWC, Flow, integrations, security, deployment, DevOps, limits, async design, data modeling, Agentforce, Data Cloud, Marketing Cloud, MuleSoft, Experience Cloud, Commerce, CPQ, Field Service, CRM Analytics, Revenue Cloud, Heroku, Slack, Industry Clouds, Nonprofit Cloud, Health Cloud, Financial Services Cloud, Education Cloud, and scalable multi-system architecture.",
+    "developerName": "Dinesh Choudhary",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Design a scalable Salesforce and integration architecture for this requirement.",
+      "Debug this Salesforce issue across Apex, Flow, security, or async behavior.",
+      "Help model this data, choose platform components, and plan deployment across Salesforce clouds."
+    ],
+    "brandColor": "#00A1E0",
+    "composerIcon": "./assets/salesforce-skills-small.svg",
+    "logo": "./assets/salesforce-skills.svg",
+    "screenshots": []
+  }
+}
