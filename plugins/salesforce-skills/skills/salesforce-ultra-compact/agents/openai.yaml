@@ -1,0 +1,4 @@
+interface:
+  display_name: "Salesforce Ultra Compact"
+  short_description: "Minimum-token Salesforce implementation guidance"
+  default_prompt: "Use $salesforce-ultra-compact to answer this Salesforce task with the fewest tokens possible while staying correct and non-speculative."
