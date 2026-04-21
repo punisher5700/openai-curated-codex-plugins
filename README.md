@@ -40,6 +40,11 @@ Cross-tool bundles:
 - `claude/`
 - `gemini/`
 
+Cross-tool coverage included here:
+
+- Salesforce Skills for Codex, Claude, and Gemini
+- Superpowers for Codex, Claude, and Gemini
+
 Helper files:
 
 - `scripts/install-dependencies.sh`

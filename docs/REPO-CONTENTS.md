@@ -14,6 +14,11 @@
 - `claude/`
 - `gemini/`
 
+Inside those:
+
+- Salesforce Skills bundles for Claude and Gemini
+- Superpowers bundles for Claude and Gemini
+
 ## Salesforce Skills plugin extras
 
 Inside `plugins/salesforce-skills`:

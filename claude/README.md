@@ -30,6 +30,18 @@ bash claude/create-project-mcp.sh /absolute/path/to/your/project
 
 This writes a `.mcp.json` file in the target project that mounts the bundled Salesforce skills through Docker.
 
+## Install Superpowers
+
+```bash
+bash claude/install-superpowers.sh
+```
+
+That syncs the bundled Superpowers workflows into:
+
+```bash
+~/.claude/skills/
+```
+
 ## What Claude gets
 
 - `salesforce-compact`
@@ -37,3 +49,4 @@ This writes a `.mcp.json` file in the target project that mounts the bundled Sal
 - `salesforce-architect`
 - all other bundled Salesforce specialist skills
 - a local Docker-backed `salesforce-skills` MCP server
+- Superpowers workflow skills
