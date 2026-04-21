@@ -1,0 +1,17 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "openai-curated",
+  "description": "Custom Claude marketplace with Salesforce-focused plugins and development workflow bundles.",
+  "owner": {
+    "name": "Dinesh Choudhary"
+  },
+  "plugins": [
+    {
+      "name": "salesforce-skills",
+      "description": "Salesforce architecture, Apex, LWC, Flow, integration, review, and low-token delivery workflows for Claude Code.",
+      "category": "development",
+      "source": "./claude/salesforce-skills",
+      "homepage": "https://github.com/punisher5700/openai-curated-codex-plugins"
+    }
+  ]
+}

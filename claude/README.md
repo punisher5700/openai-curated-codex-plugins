@@ -5,6 +5,7 @@ This directory packages your Salesforce skill set for Claude Code.
 It provides:
 
 - reusable Salesforce skills under `claude/salesforce-skills/skills/`
+- a Claude-native plugin package under `claude/salesforce-skills/.claude-plugin/`
 - an install script to sync them into `~/.claude/skills/`
 - a helper script to create a project `.mcp.json` for the Salesforce MCP server
 
@@ -62,3 +63,4 @@ That syncs the bundled Superpowers workflows into:
 - all other bundled Salesforce specialist skills
 - a local Docker-backed `salesforce-skills` MCP server
 - Superpowers workflow skills
+- a Claude-native plugin manifest for `salesforce-skills`
