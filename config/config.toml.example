@@ -1,0 +1,40 @@
+model = "gpt-5.4"
+model_reasoning_effort = "low"
+personality = "pragmatic"
+
+[marketplaces.openai-bundled]
+source_type = "local"
+source = "/Users/<your-user>/.codex/.tmp/bundled-marketplaces/openai-bundled"
+
+[marketplaces.openai-curated]
+source_type = "local"
+source = "/Users/<your-user>/.codex/marketplaces/openai-curated"
+
+[plugins."superpowers@openai-curated"]
+enabled = true
+
+[plugins."caveman@openai-curated"]
+enabled = true
+
+[plugins."salesforce-skills@openai-curated"]
+enabled = true
+
+[plugins."code-review-graph@openai-curated"]
+enabled = true
+
+[mcp_servers.code-review-graph]
+command = "code-review-graph"
+args = ["serve"]
+type = "stdio"
+
+[mcp_servers.salesforce-skills]
+command = "docker"
+args = [
+  "run",
+  "-i",
+  "--rm",
+  "-v",
+  "/Users/<your-user>/.codex/skill-bundles/salesforce:/skills:ro",
+  "mcp-skill-hub",
+]
+type = "stdio"

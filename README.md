@@ -29,3 +29,9 @@ Documentation:
 - `docs/MCP-SERVERS.md`
 - `docs/DEPENDENCIES.md`
 - `docs/REPO-CONTENTS.md`
+
+Helper files:
+
+- `scripts/install-dependencies.sh`
+- `scripts/check-dependencies.sh`
+- `config/config.toml.example`

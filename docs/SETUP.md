@@ -16,6 +16,16 @@ mkdir -p ~/.codex/marketplaces
 git clone https://github.com/punisher5700/openai-curated-codex-plugins.git ~/.codex/marketplaces/openai-curated
 ```
 
+## Install or Verify Dependencies
+
+Run:
+
+```bash
+cd ~/.codex/marketplaces/openai-curated
+bash scripts/install-dependencies.sh
+bash scripts/check-dependencies.sh
+```
+
 ## Codex Config
 
 Add this marketplace to `~/.codex/config.toml`:
@@ -39,6 +49,10 @@ enabled = true
 ```
 
 Replace `<your-user>` with the account name on that machine.
+
+You can also start from:
+
+- `config/config.toml.example`
 
 ## Restart Codex
 
