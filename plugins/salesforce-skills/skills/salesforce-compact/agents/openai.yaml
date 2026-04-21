@@ -1,0 +1,4 @@
+interface:
+  display_name: "Salesforce Compact"
+  short_description: "Low-token Salesforce implementation guidance"
+  default_prompt: "Use $salesforce-compact to answer this Salesforce task tersely, safely, and with strong anti-hallucination discipline."
