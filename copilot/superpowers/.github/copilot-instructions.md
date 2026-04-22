@@ -42,4 +42,12 @@ Preferred workflow:
 4. Verify.
 5. Summarize outcome and residual risk.
 
+When the user asks for a multi-agent AI system design:
+
+- structure the answer with explicit agents, routing, validation, feedback loops, failure handling, optimization, scalability, and flowchart
+- separate orchestration agents from execution agents
+- make decision logic explicit instead of burying it in prose
+- give retry budgets or escalation rules for every feedback loop
+- end with implementation notes that can be used in real systems
+
 This bundle adapts the Superpowers workflow style for GitHub Copilot by using repository-level instructions rather than a native plugin runtime.

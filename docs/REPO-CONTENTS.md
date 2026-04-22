@@ -31,6 +31,11 @@ Inside `plugins/salesforce-skills`:
 - `templates/` for starter development patterns
 - `checklists/` for delivery and review
 - `references/` for reusable implementation guidance
+- includes `salesforce-multi-agent-architect` for Salesforce-specific multi-agent system design
+
+Inside `plugins/superpowers`:
+
+- includes `multi-agent-architect` for generic multi-agent system design
 
 ## What this repo does not store
 
