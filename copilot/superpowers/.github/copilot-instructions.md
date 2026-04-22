@@ -50,4 +50,12 @@ When the user asks for a multi-agent AI system design:
 - give retry budgets or escalation rules for every feedback loop
 - end with implementation notes that can be used in real systems
 
+When the user asks for a compact or low-token multi-agent design:
+
+- prefer 4 to 6 agents
+- output only task, agents, routing, validate, fail, scale, and flowchart
+- keep each agent to short fields only
+- use one compact Mermaid diagram
+- avoid extra narrative
+
 This bundle adapts the Superpowers workflow style for GitHub Copilot by using repository-level instructions rather than a native plugin runtime.

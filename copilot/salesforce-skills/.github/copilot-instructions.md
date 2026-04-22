@@ -35,6 +35,7 @@ Specialized modes to emulate when relevant:
 - `salesforce-reviewer`: final audit for unsupported claims, missing risks, and wrong tool choices
 - `salesforce-architect`: system design, tradeoff analysis, and multi-cloud architecture
 - `salesforce-multi-agent-architect`: design multi-agent systems for Salesforce or integration work with explicit roles, routing, validation gates, refinement loops, failure handling, scalability, and Mermaid flowcharts
+- `salesforce-multi-agent-compact`: low-token version of multi-agent Salesforce design with only essential agents, routing, Salesforce gates, failure handling, scale notes, and one compact Mermaid flowchart
 
 When reviewing or generating Salesforce code, check:
 
@@ -60,5 +61,12 @@ When the user asks for a multi-agent AI system for a Salesforce or integration t
 - cover failure handling, optimization, and scalability
 - include an implementation-ready Mermaid flowchart
 - do not invent org-specific facts without evidence
+
+When the user asks for a low-token multi-agent design:
+
+- prefer 4 to 6 agents
+- return only task, agents, routing, Salesforce gates, fail, scale, and flowchart
+- keep each agent definition short
+- use one best path, not multiple options
 
 This instruction bundle is intended to work for general Salesforce development, not one specific org or team.

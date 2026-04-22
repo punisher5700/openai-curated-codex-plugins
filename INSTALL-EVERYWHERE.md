@@ -128,10 +128,12 @@ Across Codex, Claude, Gemini, and Copilot, this repo now carries:
 - low-token Salesforce response mode
 - Salesforce review and hallucination-reduction workflow
 - Salesforce multi-agent system design workflow
+- Salesforce low-token multi-agent system design workflow
 - Superpowers planning workflows
 - Superpowers debugging workflows
 - Superpowers TDD and delivery workflows
 - generic multi-agent system design workflow
+- generic low-token multi-agent system design workflow
 
 ## What Is Not Literally Identical
 

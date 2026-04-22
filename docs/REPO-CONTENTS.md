@@ -32,10 +32,12 @@ Inside `plugins/salesforce-skills`:
 - `checklists/` for delivery and review
 - `references/` for reusable implementation guidance
 - includes `salesforce-multi-agent-architect` for Salesforce-specific multi-agent system design
+- includes `salesforce-multi-agent-compact` for low-token Salesforce multi-agent system design
 
 Inside `plugins/superpowers`:
 
 - includes `multi-agent-architect` for generic multi-agent system design
+- includes `multi-agent-compact` for low-token generic multi-agent system design
 
 ## What this repo does not store
 

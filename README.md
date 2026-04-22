@@ -47,6 +47,7 @@ Cross-tool coverage included here:
 - Salesforce Skills for Codex, Claude, Gemini, and Copilot
 - Superpowers for Codex, Claude, Gemini, and Copilot
 - Multi-agent architecture design skills for generic and Salesforce tasks
+- Low-token multi-agent architecture design skills for generic and Salesforce tasks
 
 Helper files:
 
