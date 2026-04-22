@@ -5,28 +5,30 @@ This repo supports three different tool families:
 - Codex
 - Claude
 - Gemini
+- Copilot
 
 The same repo is used for all three, but each tool uses a different integration format.
 
 ## Support Matrix
 
-| Capability | Codex | Claude | Gemini |
-| --- | --- | --- | --- |
-| `salesforce-skills` workflows | Yes | Yes | Yes |
-| `superpowers` workflows | Yes | Yes | Yes |
-| Native Codex plugin format | Yes | No | No |
-| MCP support for Salesforce bundle | Yes | Yes | Partial |
-| Superpowers MCP server | Not needed | Not needed | Not needed |
+| Capability | Codex | Claude | Gemini | Copilot |
+| --- | --- | --- | --- | --- |
+| `salesforce-skills` workflows | Yes | Yes | Yes | Yes |
+| `superpowers` workflows | Yes | Yes | Yes | Yes |
+| Native Codex plugin format | Yes | No | No | No |
+| MCP support for Salesforce bundle | Yes | Yes | Partial | No |
+| Superpowers MCP server | Not needed | Not needed | Not needed | Not needed |
 
 ## Important Difference
 
 Codex uses native plugins.
 
-Claude and Gemini do not load Codex plugins directly, so this repo provides the closest equivalent for each:
+Claude, Gemini, and Copilot do not load Codex plugins directly, so this repo provides the closest equivalent for each:
 
 - Codex: plugins + skills + MCP configuration
 - Claude: bundle manifests + skills + optional project MCP file
 - Gemini: extension manifests + skills
+- Copilot: repository instruction bundles
 
 That means the behavior is aligned across tools, but the packaging format is different.
 
@@ -96,9 +98,30 @@ Gemini result:
 - skills copied in the Gemini-compatible layout provided by this repo
 - bundle catalog available in `gemini/gemini-bundles.json`
 
+## Install On Copilot
+
+From the repo root:
+
+```bash
+bash copilot/install-all.sh /absolute/path/to/project
+```
+
+Or install individually:
+
+```bash
+bash copilot/install-salesforce-skills.sh /absolute/path/to/project
+bash copilot/install-superpowers.sh /absolute/path/to/project
+```
+
+Copilot result:
+
+- Salesforce instructions installed into the target project's `.github/`
+- Superpowers instructions installed into the target project's `.github/`
+- bundle catalog available in `copilot/copilot-bundles.json`
+
 ## What Is Equivalent Across All Three
 
-Across Codex, Claude, and Gemini, this repo now carries:
+Across Codex, Claude, Gemini, and Copilot, this repo now carries:
 
 - Salesforce architecture guidance
 - Salesforce development guidance
@@ -127,6 +150,7 @@ For your setup:
 - use Codex when you want the strongest plugin-native workflow
 - use Claude when you want the bundled skills plus optional project MCP
 - use Gemini when you want the same skills packaged in Gemini-compatible form
+- use Copilot when you want repository-level instruction bundles inside a GitHub workflow
 
 ## Repo To Clone On Another Machine
 

@@ -14,11 +14,14 @@
 
 - `claude/`
 - `gemini/`
+- `copilot/`
 
 Inside those:
 
 - Salesforce Skills bundles for Claude and Gemini
 - Superpowers bundles for Claude and Gemini
+- Salesforce Skills bundles for Copilot
+- Superpowers bundles for Copilot
 
 ## Salesforce Skills plugin extras
 

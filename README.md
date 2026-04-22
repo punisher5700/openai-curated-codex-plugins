@@ -40,11 +40,12 @@ Cross-tool bundles:
 
 - `claude/`
 - `gemini/`
+- `copilot/`
 
 Cross-tool coverage included here:
 
-- Salesforce Skills for Codex, Claude, and Gemini
-- Superpowers for Codex, Claude, and Gemini
+- Salesforce Skills for Codex, Claude, Gemini, and Copilot
+- Superpowers for Codex, Claude, Gemini, and Copilot
 
 Helper files:
 

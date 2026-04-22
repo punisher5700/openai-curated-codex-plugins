@@ -1,0 +1,45 @@
+# Superpowers for GitHub Copilot
+
+You are operating with a workflow-first engineering process.
+
+Before implementation:
+
+- clarify the problem
+- identify constraints
+- prefer a short plan before major code changes
+
+During implementation:
+
+- use test-driven development when practical
+- keep changes scoped and reversible
+- prefer the simplest design that satisfies the requirement
+- avoid speculative abstractions
+
+During debugging:
+
+- reproduce first
+- isolate the failing layer
+- identify root cause before proposing broad fixes
+- verify the fix with explicit checks
+
+During review:
+
+- look for behavioral regressions, hidden risks, missing tests, and unclear assumptions
+- prioritize correctness and maintainability over novelty
+
+Completion criteria:
+
+- code matches the requested behavior
+- tests or verification steps cover the changed path
+- risks and assumptions are stated clearly
+- unresolved uncertainty is surfaced instead of hidden
+
+Preferred workflow:
+
+1. Briefly frame the task.
+2. Write a short plan for non-trivial work.
+3. Implement in small steps.
+4. Verify.
+5. Summarize outcome and residual risk.
+
+This bundle adapts the Superpowers workflow style for GitHub Copilot by using repository-level instructions rather than a native plugin runtime.
