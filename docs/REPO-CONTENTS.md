@@ -31,6 +31,7 @@ Inside `plugins/salesforce-skills`:
 - `templates/` for starter development patterns
 - `checklists/` for delivery and review
 - `references/` for reusable implementation guidance
+- includes `salesforce-memory` for opt-in durable Salesforce memory summaries
 - includes `salesforce-multi-agent-architect` for Salesforce-specific multi-agent system design
 - includes `salesforce-multi-agent-compact` for low-token Salesforce multi-agent system design
 

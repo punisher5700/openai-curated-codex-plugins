@@ -127,6 +127,7 @@ Across Codex, Claude, Gemini, and Copilot, this repo now carries:
 - Salesforce development guidance
 - low-token Salesforce response mode
 - Salesforce review and hallucination-reduction workflow
+- Salesforce durable memory workflow for decisions, assumptions, known fixes, and preferences
 - Salesforce multi-agent system design workflow
 - Salesforce low-token multi-agent system design workflow
 - Superpowers planning workflows
