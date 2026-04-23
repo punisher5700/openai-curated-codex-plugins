@@ -32,12 +32,11 @@ Inside `plugins/salesforce-skills`:
 - `checklists/` for delivery and review
 - `references/` for reusable implementation guidance
 - includes `salesforce-memory` for opt-in durable Salesforce memory summaries
-- includes `salesforce-memory-read` for selective use of saved memory
 - includes `salesforce-evidence-mode` for trust classification
 - includes `salesforce-safe-change` for blast-radius checks
 - includes `salesforce-scenario-router` for choosing the smallest correct specialist path
 - includes `salesforce-source-check` for official-doc checks on release-sensitive claims
-- includes `salesforce-answer-contract` for consistent low-token answer shape
+- uses `salesforce-compact` for consistent low-token answer shapes
 - includes `salesforce-multi-agent-architect` for Salesforce-specific multi-agent system design
 - includes `salesforce-multi-agent-compact` for low-token Salesforce multi-agent system design
 

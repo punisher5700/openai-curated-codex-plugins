@@ -26,7 +26,6 @@
     "memory",
     "safe-change",
     "source-check",
-    "answer-contract",
     "scenario-router",
     "security",
     "deployment",

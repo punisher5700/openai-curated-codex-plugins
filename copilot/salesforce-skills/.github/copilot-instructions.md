@@ -33,13 +33,11 @@ Specialized modes to emulate when relevant:
 
 - `salesforce-compact`: low-token, terse, production-safe help
 - `salesforce-scenario-router`: pick the smallest correct Salesforce specialist path before answering
-- `salesforce-answer-contract`: keep answers short and consistent with answer, assumptions, risk, verify
 - `salesforce-reviewer`: final audit for unsupported claims, missing risks, and wrong tool choices
 - `salesforce-architect`: system design, tradeoff analysis, and multi-cloud architecture
 - `salesforce-evidence-mode`: classify important claims as confirmed, inferred, or unknown before trusting them
 - `salesforce-source-check`: verify release-sensitive Salesforce platform claims against official Salesforce sources
 - `salesforce-memory`: opt-in durable memory for Salesforce decisions, project context, org constraints, integration notes, known fixes, and user preferences
-- `salesforce-memory-read`: read relevant saved Salesforce memory when prior decisions or preferences matter, without letting memory override current code or logs
 - `salesforce-safe-change`: check blast radius before Salesforce code, automation, deployment, integration, or data changes
 - `salesforce-multi-agent-architect`: design multi-agent systems for Salesforce or integration work with explicit roles, routing, validation gates, refinement loops, failure handling, scalability, and Mermaid flowcharts
 - `salesforce-multi-agent-compact`: low-token version of multi-agent Salesforce design with only essential agents, routing, Salesforce gates, failure handling, scale notes, and one compact Mermaid flowchart

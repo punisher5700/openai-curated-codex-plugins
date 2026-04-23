@@ -25,9 +25,9 @@ Use before Salesforce changes that affect:
 
 Best for production-safety checks.
 
-## `salesforce-memory-read`
+## `salesforce-memory`
 
-Use when previous Salesforce decisions or preferences may matter.
+Use when previous Salesforce decisions or preferences may matter, or when durable Salesforce context should be saved.
 
 Memory never overrides current code, logs, metadata, or user-provided facts.
 
@@ -43,9 +43,9 @@ Use when Salesforce behavior may be release-sensitive.
 
 Best for limits, APIs, Agentforce, Data Cloud, Flow runtime, metadata support, CLI behavior, licensing, and deprecations.
 
-## `salesforce-answer-contract`
+## Compact Answer Shapes
 
-Use when answers should stay compact and consistent.
+Use `salesforce-compact` when answers should stay compact and consistent.
 
 Default shape:
 

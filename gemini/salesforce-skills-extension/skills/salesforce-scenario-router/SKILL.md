@@ -26,7 +26,7 @@ Pick one primary path:
 - multi-agent design -> `salesforce-multi-agent-compact`
 - release-sensitive platform behavior -> `salesforce-source-check`
 - risky code/data/deployment change -> `salesforce-safe-change`
-- previous decisions matter -> `salesforce-memory-read`
+- previous decisions matter -> `salesforce-memory`
 - hallucination risk matters -> `salesforce-evidence-mode`
 
 ## Token Rule
@@ -36,6 +36,7 @@ Default to:
 1. `salesforce-compact`
 2. one specialist skill only if needed
 3. one trust gate only if needed
+4. `salesforce-compact` answer shapes unless the user asks for detail
 
 Avoid loading many specialist domains at once.
 
