@@ -28,6 +28,7 @@ Choose the smallest specialist path:
 - Use `salesforce-engineering-mode` when the task needs planning, TDD, debugging, code review, verification, or branch-completion workflow help.
 - Use `salesforce-agent-mode` when the task needs multi-agent system design for Salesforce or integrations and the answer should stay low-token and low-hallucination.
 - Use `salesforce-design-mode` when the task is mainly architecture, data model, security design, or DevOps workflow design.
+- Use `salesforce-validation-mode` when the task needs a final fix-test-review-verify loop with edge-case, bulk, or governor-sensitive validation.
 
 ## Complexity Router
 

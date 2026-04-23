@@ -27,9 +27,10 @@ Skill count:
 - 1 agent workflow skill
 - 1 trust workflow skill
 - 1 design workflow skill
+- 1 validation workflow skill
 - 1 documentation skill
 - 1 merged `salesforce-superpowers` entry skill
-- 38 total skills
+- 39 total skills
 
 Support folders:
 
