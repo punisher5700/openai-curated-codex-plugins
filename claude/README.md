@@ -34,4 +34,5 @@ bash claude/create-project-mcp.sh /absolute/path/to/your/project
 - hallucination-reduction reviewer and evidence gates
 - Salesforce memory and source-check workflows
 - Superpowers planning, TDD, debugging, review, and delivery workflows
+- Graphify knowledge graph and GraphRAG workflows
 - local Docker-backed `salesforce-superpowers` MCP server config

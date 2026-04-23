@@ -13,6 +13,7 @@ Some plugins in this repository expect tools to be available on the machine.
 
 - `docker`
 - `gh`
+- `graphify`
 
 ### GitHub workflows
 
@@ -29,6 +30,23 @@ Useful for:
 - `docker`
 
 Useful if you also use a Docker-based MCP skill hub setup outside this repository.
+
+### Graphify workflows
+
+- `graphify`
+
+Useful for:
+
+- codebase and architecture knowledge graphs
+- clustered community reports
+- GraphRAG-ready JSON
+- `graphify-out/` HTML, JSON, SVG, GraphML, Cypher, and audit artifacts
+
+Install path used by the helper script:
+
+```bash
+pipx install graphifyy
+```
 
 ## Not bundled here
 

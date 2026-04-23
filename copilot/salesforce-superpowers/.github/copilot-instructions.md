@@ -26,6 +26,12 @@ For Superpowers workflow:
 - debug systematically
 - verify before declaring complete
 
+For Graphify:
+
+- use Graphify-style knowledge graph workflows when asked for architecture maps, dependency maps, codebase graphs, cross-document analysis, GraphRAG JSON, clustered communities, or `graphify-out` artifacts
+- treat graph edges as extracted, inferred, or ambiguous evidence
+- use existing graph outputs to reduce repeated context loading where possible
+
 For multi-agent designs:
 
 - prefer compact 4 to 6 agent workflows

@@ -12,6 +12,7 @@ It combines Salesforce Skills and Superpowers into one plugin-like package acros
 | --- | --- | --- | --- | --- |
 | Salesforce development workflows | Yes | Yes | Yes | Yes |
 | Superpowers engineering workflows | Yes | Yes | Yes | Yes |
+| Graphify knowledge graph workflow | Yes | Yes | Yes | Instruction-only |
 | Low-token Salesforce mode | Yes | Yes | Yes | Yes |
 | Trust gates and reviewer skills | Yes | Yes | Yes | Yes |
 | Native Codex plugin format | Yes | No | No | No |
@@ -79,6 +80,7 @@ bash copilot/install-salesforce-superpowers.sh /absolute/path/to/project
 - Salesforce architecture, Apex, LWC, Flow, integrations, deployments, security, Data Cloud, Agentforce, MuleSoft, Marketing Cloud, and industry clouds
 - Salesforce compact responses, memory, evidence mode, source checks, safe-change gates, scenario routing, and final reviewer gate
 - Superpowers brainstorming, planning, TDD, systematic debugging, worktrees, code review, and delivery
+- Graphify knowledge graph generation, GraphRAG JSON, clustered communities, and graph audit reports
 - Generic and Salesforce-specific multi-agent workflow design, including low-token variants
 
 ## Repo

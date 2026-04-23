@@ -1,7 +1,7 @@
 {
   "id": "salesforce-superpowers",
   "name": "Salesforce Superpowers",
-  "description": "Unified Claude bundle for Salesforce skills, Superpowers workflows, memory, trust gates, source checks, multi-agent design, TDD, debugging, and review.",
+  "description": "Unified Claude bundle for Salesforce skills, Superpowers workflows, Graphify knowledge graphs, memory, trust gates, source checks, multi-agent design, TDD, debugging, and review.",
   "type": "skill-bundle",
   "contextFile": "CLAUDE.md",
   "skillsDir": "skills",

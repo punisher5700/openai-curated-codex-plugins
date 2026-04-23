@@ -8,7 +8,7 @@
   "plugins": [
     {
       "name": "salesforce-superpowers",
-      "description": "Unified Salesforce development, memory, trust gates, low-token answers, planning, TDD, debugging, review, and delivery workflows for Claude Code.",
+      "description": "Unified Salesforce development, memory, trust gates, low-token answers, Graphify knowledge graphs, planning, TDD, debugging, review, and delivery workflows for Claude Code.",
       "category": "development",
       "source": "./claude/salesforce-superpowers",
       "homepage": "https://github.com/punisher5700/openai-curated-codex-plugins"

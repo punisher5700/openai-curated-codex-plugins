@@ -18,6 +18,7 @@ echo "Checking machine-level dependencies..."
 check_cmd git
 check_cmd gh
 check_cmd docker
+check_cmd graphify
 
 echo
 echo "Checking GitHub auth..."

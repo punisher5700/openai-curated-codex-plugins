@@ -1,6 +1,6 @@
 # Salesforce Superpowers Gemini Extension
 
-Unified Gemini extension containing Salesforce Skills and Superpowers workflows.
+Unified Gemini extension containing Salesforce Skills, Superpowers workflows, and Graphify knowledge graph workflows.
 
 Install:
 

@@ -1,6 +1,6 @@
 ---
 name: salesforce-superpowers
-description: Use as the single entry point for Salesforce development with Superpowers workflows. Routes Salesforce tasks through compact answers, evidence checks, safe-change gates, source checks, memory, planning, TDD, debugging, review, delivery, and multi-agent workflows while loading deeper specialist skills only when needed.
+description: Use as the single entry point for Salesforce development with Superpowers and Graphify workflows. Routes Salesforce tasks through compact answers, evidence checks, safe-change gates, source checks, memory, planning, TDD, debugging, review, delivery, multi-agent workflows, and knowledge-graph analysis while loading deeper specialist skills only when needed.
 ---
 
 # Salesforce Superpowers
@@ -24,6 +24,7 @@ Choose the smallest specialist path:
 - Use safe-change before modifying production-impacting behavior.
 - Use reviewer before final answers, designs, or code that could be wrong or risky.
 - Use memory only for durable non-secret project facts, decisions, assumptions, and preferences.
+- Use Graphify when the task needs a knowledge graph, architecture map, codebase graph, dependency graph, cross-document analysis, GraphRAG JSON, clustered communities, or `graphify-out` artifacts.
 
 ## Superpowers Workflow
 
@@ -36,6 +37,16 @@ For implementation work:
 - Verify before completion.
 - Use code review gates for risky changes.
 - Use multi-agent design only when task decomposition materially helps.
+
+## Graphify Workflow
+
+For graph or corpus analysis:
+
+- Prefer `/graphify <path>` for a full graph.
+- Use `/graphify <path> --update` for incremental refreshes.
+- Use `/graphify query "<question>"` when an existing graph can answer with less token load.
+- Preserve Graphify's extracted, inferred, and ambiguous edge labeling.
+- Treat Graphify output as evidence, not as a replacement for official Salesforce source checks.
 
 ## Output Contract
 

@@ -1,6 +1,6 @@
 # Salesforce Superpowers for Claude Code
 
-Unified Claude plugin-like bundle containing Salesforce Skills and Superpowers workflows.
+Unified Claude plugin-like bundle containing Salesforce Skills, Superpowers workflows, and Graphify knowledge graph workflows.
 
 Install:
 

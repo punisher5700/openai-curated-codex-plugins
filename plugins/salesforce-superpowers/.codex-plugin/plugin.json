@@ -1,7 +1,7 @@
 {
   "name": "salesforce-superpowers",
   "version": "1.0.0",
-  "description": "Unified Salesforce development, architecture, trust gates, memory, multi-agent design, planning, TDD, debugging, review, and delivery workflows.",
+  "description": "Unified Salesforce development, architecture, trust gates, memory, Graphify knowledge graphs, multi-agent design, planning, TDD, debugging, review, and delivery workflows.",
   "author": {
     "name": "Dinesh Choudhary",
     "url": "https://github.com/punisher5700"
@@ -29,6 +29,9 @@
     "source-check",
     "scenario-router",
     "multi-agent",
+    "graphify",
+    "knowledge-graph",
+    "graphrag",
     "planning",
     "tdd",
     "code-review",
@@ -37,8 +40,8 @@
   "skills": "./skills/",
   "interface": {
     "displayName": "Salesforce Superpowers",
-    "shortDescription": "Salesforce skills plus Superpowers workflows in one plugin",
-    "longDescription": "Use Salesforce Superpowers for Salesforce architecture, Apex, LWC, Flow, integrations, security, deployment, memory, trust gates, source checks, low-token answers, multi-agent design, planning, TDD, systematic debugging, code review, and delivery workflows.",
+    "shortDescription": "Salesforce, Superpowers, and Graphify workflows in one plugin",
+    "longDescription": "Use Salesforce Superpowers for Salesforce architecture, Apex, LWC, Flow, integrations, security, deployment, memory, trust gates, source checks, low-token answers, Graphify knowledge graphs, GraphRAG JSON, multi-agent design, planning, TDD, systematic debugging, code review, and delivery workflows.",
     "developerName": "Dinesh Choudhary",
     "category": "Coding",
     "capabilities": [
@@ -50,6 +53,8 @@
       "Use Salesforce Superpowers to solve this Salesforce development task with compact, trustworthy guidance.",
       "Plan and implement this Salesforce change using TDD, safe-change checks, and verification.",
       "Design a Salesforce architecture or multi-agent workflow with evidence, risks, and validation gates."
+      ,
+      "Build a Graphify knowledge graph for this Salesforce codebase or document set."
     ],
     "brandColor": "#00A1E0",
     "composerIcon": "./assets/salesforce-skills-small.svg",
