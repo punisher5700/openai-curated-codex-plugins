@@ -30,3 +30,28 @@ Best for production-safety checks.
 Use when previous Salesforce decisions or preferences may matter.
 
 Memory never overrides current code, logs, metadata, or user-provided facts.
+
+## `salesforce-scenario-router`
+
+Use before Salesforce work to choose the smallest correct path.
+
+Best for saving tokens by loading only one specialist and one trust gate when needed.
+
+## `salesforce-source-check`
+
+Use when Salesforce behavior may be release-sensitive.
+
+Best for limits, APIs, Agentforce, Data Cloud, Flow runtime, metadata support, CLI behavior, licensing, and deprecations.
+
+## `salesforce-answer-contract`
+
+Use when answers should stay compact and consistent.
+
+Default shape:
+
+```text
+Answer:
+Assumptions:
+Risk:
+Verify:
+```

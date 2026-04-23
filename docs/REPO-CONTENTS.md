@@ -35,6 +35,9 @@ Inside `plugins/salesforce-skills`:
 - includes `salesforce-memory-read` for selective use of saved memory
 - includes `salesforce-evidence-mode` for trust classification
 - includes `salesforce-safe-change` for blast-radius checks
+- includes `salesforce-scenario-router` for choosing the smallest correct specialist path
+- includes `salesforce-source-check` for official-doc checks on release-sensitive claims
+- includes `salesforce-answer-contract` for consistent low-token answer shape
 - includes `salesforce-multi-agent-architect` for Salesforce-specific multi-agent system design
 - includes `salesforce-multi-agent-compact` for low-token Salesforce multi-agent system design
 
