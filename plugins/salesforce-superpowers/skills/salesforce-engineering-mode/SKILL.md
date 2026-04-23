@@ -20,6 +20,33 @@ Use this skill instead of separate Superpowers workflow skills.
 - compact and full multi-agent system design
 - finish-branch workflow
 
+## Execution Policy
+
+Default to the fastest safe execution path:
+
+- simple:
+  - one agent
+  - no decomposition overhead
+- moderate:
+  - one planner step
+  - one implementation flow
+- complex:
+  - one thin planner
+  - parallel implementation lanes for independent slices
+  - one validator lane
+
+Only use parallel lanes when:
+
+- write scopes do not overlap materially
+- the subproblems can be described clearly
+- waiting on one lane is not on the critical path for all others
+
+Do not parallelize when:
+
+- the task is mostly one bug in one narrow codepath
+- all edits touch the same file or same method cluster
+- the user only wants a quick answer
+
 ## Workflow Selector
 
 ### 1. Design / ambiguity
@@ -57,9 +84,41 @@ Use this skill instead of separate Superpowers workflow skills.
 
 ### 6. Multi-agent / decomposition
 
-- use compact mode for low-token designs
-- use full mode for production-ready multi-agent workflows
-- separate planner, execution, and validator concerns when useful
+- use compact decomposition by default
+- create the smallest useful plan first
+- split by independent file set, concern, or validation stage
+- separate planner, execution, and validator concerns
+- prefer 2 to 4 lanes, not large swarms
+- keep each lane prompt narrow to save tokens
+- merge and verify centrally before claiming completion
+
+## Default Lane Shapes
+
+For complex implementation:
+
+- Planner lane
+  - define slices, order, and verification
+- Implementation lanes
+  - Apex lane
+  - LWC lane
+  - Flow lane
+  - Integration lane
+  - choose only the lanes actually needed
+- Validator lane
+  - test, review, trust check, deployment risk
+
+For debugging:
+
+- Reproduction lane
+- Root-cause lane
+- Fix lane
+- Validation lane
+
+For review-and-fix:
+
+- Review lane
+- Fix lane
+- Retest lane
 
 ## Output Contract
 
@@ -68,6 +127,16 @@ Default implementation shape:
 ```text
 Plan:
 Do:
+Verify:
+Risk:
+```
+
+For complex tasks use:
+
+```text
+Plan:
+Lanes:
+Merge:
 Verify:
 Risk:
 ```

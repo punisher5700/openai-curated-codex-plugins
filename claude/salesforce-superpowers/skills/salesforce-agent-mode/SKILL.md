@@ -15,6 +15,7 @@ Return a production-safe Salesforce multi-agent design that:
 - avoids org-specific hallucination
 - keeps only the material agents and loops
 - stays implementable in real delivery
+- can be used as an execution blueprint for parallel worker agents
 
 ## Default Output
 
@@ -40,6 +41,8 @@ Prefer:
 - one escalation path
 
 Expand only if the task truly needs more specialization.
+
+For execution-oriented coding tasks, prefer 3 to 5 agents.
 
 ## Agent Format
 
@@ -73,6 +76,23 @@ Implementation Pool may include:
 
 Keep the pool abstract unless specialization materially changes the design.
 
+## Execution Bias
+
+When the user wants speed, lower token use, or faster completion:
+
+- minimize planner verbosity
+- split only independent work
+- prefer narrow implementer lanes over many agents
+- use one shared validator instead of many reviewers
+- return the execution order, not a long theory section
+
+For coding and delivery tasks, prefer:
+
+- Planner
+- 1 to 3 Implementation Lanes
+- Validator
+- Release
+
 ## Evidence Rules
 
 Classify important claims as:
@@ -96,6 +116,7 @@ Make these explicit when relevant:
 - sync vs async
 - direct integration vs middleware
 - when to stop and ask for metadata, logs, screenshots, or schema details
+- which parts can run in parallel versus which must stay on the critical path
 
 ## Salesforce Gates
 
@@ -134,6 +155,13 @@ Mention only:
 - queue or async boundary
 - artifact store or audit trail
 - API or middleware rate limits
+
+## Token Rules
+
+- keep each agent description to one short block
+- avoid duplicate context between lanes
+- reuse one validator instead of repeating checks per lane unless necessary
+- do not expand to large swarms unless the task truly needs them
 
 ## Flowchart
 

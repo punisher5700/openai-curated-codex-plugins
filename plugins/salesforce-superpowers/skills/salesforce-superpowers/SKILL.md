@@ -29,6 +29,30 @@ Choose the smallest specialist path:
 - Use `salesforce-agent-mode` when the task needs multi-agent system design for Salesforce or integrations and the answer should stay low-token and low-hallucination.
 - Use `salesforce-design-mode` when the task is mainly architecture, data model, security design, or DevOps workflow design.
 
+## Complexity Router
+
+Use this default complexity split:
+
+- small task:
+  - answer directly
+  - keep output compact
+- medium task:
+  - make a short plan
+  - execute in one flow
+- complex task:
+  - decompose into independent work units
+  - run planner, implementer, and validator as separate lanes when the client supports multi-agent execution
+  - keep each lane narrow to reduce token use and turnaround time
+
+Treat a task as complex when any of these apply:
+
+- multiple independent files or modules
+- mixed Salesforce surfaces such as Apex plus LWC plus Flow plus integration
+- architecture plus implementation plus validation in one request
+- likely long-running debugging across several hypotheses
+- code review plus fix plus retest workflow
+- enough scope that sequential execution would waste time
+
 ## Engineering Workflow
 
 For implementation work:
@@ -39,7 +63,10 @@ For implementation work:
 - Debug from symptoms to root cause.
 - Verify before completion.
 - Use code review gates for risky changes.
-- Use multi-agent design only when task decomposition materially helps.
+- For complex work, prefer decomposition into planner, implementation lanes, and validator lanes.
+- If the client supports subagents or worker agents, use them for independent workstreams.
+- Keep shared context minimal and pass only the task slice each lane needs.
+- Fall back to single-agent execution when the task is tightly coupled or the client cannot run multiple agents.
 
 ## Graph Workflow
 
