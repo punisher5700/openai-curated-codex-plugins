@@ -47,6 +47,7 @@ Cross-tool coverage included here:
 - Salesforce Skills for Codex, Claude, Gemini, and Copilot
 - Superpowers for Codex, Claude, Gemini, and Copilot
 - Salesforce memory-saving workflow for durable project context and decisions
+- Salesforce evidence, safe-change, and memory-read trust gates
 - Multi-agent architecture design skills for generic and Salesforce tasks
 - Low-token multi-agent architecture design skills for generic and Salesforce tasks
 

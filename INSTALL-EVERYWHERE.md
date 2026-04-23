@@ -128,6 +128,9 @@ Across Codex, Claude, Gemini, and Copilot, this repo now carries:
 - low-token Salesforce response mode
 - Salesforce review and hallucination-reduction workflow
 - Salesforce durable memory workflow for decisions, assumptions, known fixes, and preferences
+- Salesforce evidence mode for confirmed, inferred, and unknown claim handling
+- Salesforce safe-change gate for blast-radius and rollback checks
+- Salesforce memory-read gate for using saved context without overriding current evidence
 - Salesforce multi-agent system design workflow
 - Salesforce low-token multi-agent system design workflow
 - Superpowers planning workflows
