@@ -10,23 +10,20 @@ source = "/Users/<your-user>/.codex/.tmp/bundled-marketplaces/openai-bundled"
 source_type = "local"
 source = "/Users/<your-user>/.codex/marketplaces/openai-curated"
 
-[plugins."superpowers@openai-curated"]
-enabled = true
-
-[plugins."salesforce-skills@openai-curated"]
+[plugins."salesforce-superpowers@openai-curated"]
 enabled = true
 
 [plugins."github@openai-curated"]
 enabled = true
 
-[mcp_servers.salesforce-skills]
+[mcp_servers.salesforce-superpowers]
 command = "docker"
 args = [
   "run",
   "-i",
   "--rm",
   "-v",
-  "/Users/<your-user>/.codex/skill-bundles/salesforce:/skills:ro",
+  "/Users/<your-user>/.codex/marketplaces/openai-curated/plugins/salesforce-superpowers/skills:/skills:ro",
   "mcp-skill-hub",
 ]
 type = "stdio"

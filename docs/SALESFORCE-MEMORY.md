@@ -32,7 +32,7 @@ SALESFORCE-AI-MEMORY.md
 Template:
 
 ```text
-plugins/salesforce-skills/templates/SALESFORCE-AI-MEMORY.md
+plugins/salesforce-superpowers/templates/SALESFORCE-AI-MEMORY.md
 ```
 
 Use private local memory only when the user explicitly wants personal-only context:

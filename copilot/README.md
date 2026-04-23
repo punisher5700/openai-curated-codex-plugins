@@ -1,22 +1,21 @@
-# Copilot Bundles
+# Copilot Salesforce Superpowers Bundle
 
-This directory packages your Salesforce and Superpowers workflows for GitHub Copilot.
+This directory packages the merged Salesforce Superpowers workflow for GitHub Copilot.
 
 It provides:
 
-- repo-level Copilot instruction bundles
-- install scripts that copy instructions into a target project's `.github/`
+- repo-level Copilot instructions
+- an install script that copies instructions into a target project's `.github/`
 - a bundle catalog in `copilot/copilot-bundles.json`
 
-Install all bundles into a project:
+Install into a project:
 
 ```bash
 bash copilot/install-all.sh /absolute/path/to/project
 ```
 
-Or install individually:
+Or:
 
 ```bash
-bash copilot/install-salesforce-skills.sh /absolute/path/to/project
-bash copilot/install-superpowers.sh /absolute/path/to/project
+bash copilot/install-salesforce-superpowers.sh /absolute/path/to/project
 ```

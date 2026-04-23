@@ -46,26 +46,23 @@ append_if_missing '[marketplaces.openai-curated]
 source_type = "local"
 source = "'"$TARGET_DIR"'"' '[marketplaces.openai-curated]'
 
-append_if_missing '[plugins."superpowers@openai-curated"]
-enabled = true' '[plugins."superpowers@openai-curated"]'
-
-append_if_missing '[plugins."salesforce-skills@openai-curated"]
-enabled = true' '[plugins."salesforce-skills@openai-curated"]'
+append_if_missing '[plugins."salesforce-superpowers@openai-curated"]
+enabled = true' '[plugins."salesforce-superpowers@openai-curated"]'
 
 append_if_missing '[plugins."github@openai-curated"]
 enabled = true' '[plugins."github@openai-curated"]'
 
-append_if_missing '[mcp_servers.salesforce-skills]
+append_if_missing '[mcp_servers.salesforce-superpowers]
 command = "docker"
 args = [
   "run",
   "-i",
   "--rm",
   "-v",
-  "'"${HOME}"'/.codex/skill-bundles/salesforce:/skills:ro",
+  "'"${TARGET_DIR}"'/plugins/salesforce-superpowers/skills:/skills:ro",
   "mcp-skill-hub",
 ]
-type = "stdio"' '[mcp_servers.salesforce-skills]'
+type = "stdio"' '[mcp_servers.salesforce-superpowers]'
 
 echo
 echo "Setup complete."

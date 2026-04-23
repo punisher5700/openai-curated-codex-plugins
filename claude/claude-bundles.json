@@ -1,19 +1,12 @@
 {
   "bundles": [
     {
-      "id": "salesforce-skills",
-      "name": "Salesforce Skills",
+      "id": "salesforce-superpowers",
+      "name": "Salesforce Superpowers",
       "type": "skill-bundle",
-      "entry": "salesforce-skills/claude-bundle.json",
-      "install": "install-salesforce-skills.sh",
+      "entry": "salesforce-superpowers/claude-bundle.json",
+      "install": "install-salesforce-superpowers.sh",
       "optionalProjectMcp": "create-project-mcp.sh"
-    },
-    {
-      "id": "superpowers",
-      "name": "Superpowers",
-      "type": "skill-bundle",
-      "entry": "superpowers/claude-bundle.json",
-      "install": "install-superpowers.sh"
     }
   ]
 }

@@ -1,0 +1,21 @@
+{
+  "name": "salesforce-superpowers",
+  "description": "Unified Salesforce development, trust gates, memory, planning, TDD, debugging, review, and delivery workflows for Claude Code.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Dinesh Choudhary"
+  },
+  "homepage": "https://github.com/punisher5700/openai-curated-codex-plugins",
+  "repository": "https://github.com/punisher5700/openai-curated-codex-plugins",
+  "license": "MIT",
+  "keywords": [
+    "salesforce",
+    "superpowers",
+    "skills",
+    "mcp",
+    "tdd",
+    "debugging",
+    "integration",
+    "architecture"
+  ]
+}

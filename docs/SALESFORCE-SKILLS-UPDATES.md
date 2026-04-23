@@ -1,6 +1,6 @@
 # Salesforce Skills Updates
 
-This file tracks meaningful updates made to the `salesforce-skills` plugin.
+This file tracks meaningful updates made to the Salesforce content inside the `salesforce-superpowers` plugin.
 
 Use this log when the plugin is updated because of:
 
@@ -24,3 +24,6 @@ For each update, append:
 
 - 2026-04-21
   - Initialized update log for automated Salesforce Skills maintenance.
+- 2026-04-23
+  - Merged Salesforce Skills and Superpowers into `salesforce-superpowers`.
+  - Kept Salesforce update tracking focused on development-relevant official Salesforce changes.

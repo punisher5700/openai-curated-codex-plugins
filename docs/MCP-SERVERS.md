@@ -1,23 +1,33 @@
 # MCP Server Notes
 
-This repository is Salesforce-focused.
+The merged MCP-facing bundle is:
 
-## Salesforce Skills note
+- `salesforce-superpowers`
 
-The `salesforce-skills` plugin is primarily a skill bundle in this repo. If you also want a machine-level MCP setup that mounts external skill bundles via Docker, that belongs in `~/.codex/config.toml`, not inside this repository.
+It mounts the unified skill directory through `mcp-skill-hub`.
 
-Example:
+## Codex Example
 
 ```toml
-[mcp_servers.salesforce-skills]
+[mcp_servers.salesforce-superpowers]
 command = "docker"
 args = [
   "run",
   "-i",
   "--rm",
   "-v",
-  "/Users/<your-user>/.codex/skill-bundles/salesforce:/skills:ro",
+  "/Users/<your-user>/.codex/marketplaces/openai-curated/plugins/salesforce-superpowers/skills:/skills:ro",
   "mcp-skill-hub",
 ]
 type = "stdio"
 ```
+
+## Claude Project Example
+
+Use:
+
+```bash
+bash claude/create-project-mcp.sh /absolute/path/to/project
+```
+
+That writes a project-local `.mcp.json` pointing to `claude/salesforce-superpowers/skills`.

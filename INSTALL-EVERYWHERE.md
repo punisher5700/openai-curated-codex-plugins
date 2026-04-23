@@ -1,54 +1,32 @@
 # Install Everywhere
 
-This repo supports three different tool families:
+This repo now exposes one merged Salesforce developer bundle:
 
-- Codex
-- Claude
-- Gemini
-- Copilot
+- `salesforce-superpowers`
 
-The same repo is used for all three, but each tool uses a different integration format.
+It combines Salesforce Skills and Superpowers into one plugin-like package across Codex, Claude, Gemini, and Copilot.
 
 ## Support Matrix
 
 | Capability | Codex | Claude | Gemini | Copilot |
 | --- | --- | --- | --- | --- |
-| `salesforce-skills` workflows | Yes | Yes | Yes | Yes |
-| `superpowers` workflows | Yes | Yes | Yes | Yes |
+| Salesforce development workflows | Yes | Yes | Yes | Yes |
+| Superpowers engineering workflows | Yes | Yes | Yes | Yes |
+| Low-token Salesforce mode | Yes | Yes | Yes | Yes |
+| Trust gates and reviewer skills | Yes | Yes | Yes | Yes |
 | Native Codex plugin format | Yes | No | No | No |
-| MCP support for Salesforce bundle | Yes | Yes | Partial | No |
-| Superpowers MCP server | Not needed | Not needed | Not needed | Not needed |
+| MCP skill-hub mount | Yes | Yes | Partial | No |
 
-## Important Difference
-
-Codex uses native plugins.
-
-Claude, Gemini, and Copilot do not load Codex plugins directly, so this repo provides the closest equivalent for each:
-
-- Codex: plugins + skills + MCP configuration
-- Claude: bundle manifests + skills + optional project MCP file
-- Gemini: extension manifests + skills
-- Copilot: repository instruction bundles
-
-That means the behavior is aligned across tools, but the packaging format is different.
-
-## Install On Codex
+## Codex
 
 Use this repo as your Codex marketplace source.
 
 Main pieces:
 
 - `.agents/plugins/marketplace.json`
-- `plugins/salesforce-skills`
-- `plugins/superpowers`
+- `plugins/salesforce-superpowers`
 
-Codex-specific notes:
-
-- Codex is the only tool here that uses the native plugin model
-- Salesforce MCP integration is part of the Codex-side setup
-- Superpowers is a workflow plugin, so no separate MCP server is required
-
-## Install On Claude
+## Claude
 
 From the repo root:
 
@@ -56,27 +34,19 @@ From the repo root:
 bash claude/install-all.sh
 ```
 
-Or install individually:
+Or:
 
 ```bash
-bash claude/install-salesforce-skills.sh
-bash claude/install-superpowers.sh
+bash claude/install-salesforce-superpowers.sh
 ```
 
-If you want project-level Salesforce MCP access in Claude too:
+Optional project MCP:
 
 ```bash
 bash claude/create-project-mcp.sh /absolute/path/to/your/project
 ```
 
-Claude result:
-
-- Salesforce bundle installed
-- Superpowers bundle installed
-- optional `.mcp.json` created for a target project
-- bundle catalog available in `claude/claude-bundles.json`
-
-## Install On Gemini
+## Gemini
 
 From the repo root:
 
@@ -84,21 +54,13 @@ From the repo root:
 bash gemini/install-all.sh
 ```
 
-Or install individually:
+Or:
 
 ```bash
-bash gemini/install-salesforce-skills-extension.sh
-bash gemini/install-superpowers-extension.sh
+bash gemini/install-salesforce-superpowers-extension.sh
 ```
 
-Gemini result:
-
-- Salesforce extension-style bundle installed
-- Superpowers extension-style bundle installed
-- skills copied in the Gemini-compatible layout provided by this repo
-- bundle catalog available in `gemini/gemini-bundles.json`
-
-## Install On Copilot
+## Copilot
 
 From the repo root:
 
@@ -106,67 +68,19 @@ From the repo root:
 bash copilot/install-all.sh /absolute/path/to/project
 ```
 
-Or install individually:
+Or:
 
 ```bash
-bash copilot/install-salesforce-skills.sh /absolute/path/to/project
-bash copilot/install-superpowers.sh /absolute/path/to/project
+bash copilot/install-salesforce-superpowers.sh /absolute/path/to/project
 ```
 
-Copilot result:
+## Included Workflow Coverage
 
-- Salesforce instructions installed into the target project's `.github/`
-- Superpowers instructions installed into the target project's `.github/`
-- bundle catalog available in `copilot/copilot-bundles.json`
+- Salesforce architecture, Apex, LWC, Flow, integrations, deployments, security, Data Cloud, Agentforce, MuleSoft, Marketing Cloud, and industry clouds
+- Salesforce compact responses, memory, evidence mode, source checks, safe-change gates, scenario routing, and final reviewer gate
+- Superpowers brainstorming, planning, TDD, systematic debugging, worktrees, code review, and delivery
+- Generic and Salesforce-specific multi-agent workflow design, including low-token variants
 
-## What Is Equivalent Across All Three
-
-Across Codex, Claude, Gemini, and Copilot, this repo now carries:
-
-- Salesforce architecture guidance
-- Salesforce development guidance
-- low-token Salesforce response mode
-- Salesforce review and hallucination-reduction workflow
-- Salesforce durable memory workflow for decisions, assumptions, known fixes, and preferences
-- Salesforce evidence mode for confirmed, inferred, and unknown claim handling
-- Salesforce safe-change gate for blast-radius and rollback checks
-- Salesforce memory gate for saving and reading durable context without overriding current evidence
-- Salesforce scenario router for choosing the smallest specialist path
-- Salesforce official source-check gate for release-sensitive claims
-- Salesforce compact answer shapes for consistent low-token answers
-- Salesforce multi-agent system design workflow
-- Salesforce low-token multi-agent system design workflow
-- Superpowers planning workflows
-- Superpowers debugging workflows
-- Superpowers TDD and delivery workflows
-- generic multi-agent system design workflow
-- generic low-token multi-agent system design workflow
-
-## What Is Not Literally Identical
-
-These are not identical across all tools:
-
-- plugin runtime internals
-- MCP wiring model
-- tool invocation model
-- UI behavior
-- model quality and reasoning behavior
-
-So the repo gives you the same operating content, but each client still behaves according to its own platform rules.
-
-## Recommended Use
-
-For your setup:
-
-- use Codex when you want the strongest plugin-native workflow
-- use Claude when you want the bundled skills plus optional project MCP
-- use Gemini when you want the same skills packaged in Gemini-compatible form
-- use Copilot when you want repository-level instruction bundles inside a GitHub workflow
-
-## Repo To Clone On Another Machine
-
-Use:
+## Repo
 
 [openai-curated-codex-plugins](https://github.com/punisher5700/openai-curated-codex-plugins)
-
-Then run the install script that matches the tool on that machine.

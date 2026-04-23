@@ -5,47 +5,34 @@
 - `.agents/plugins/marketplace.json`
 - `INSTALL-EVERYWHERE.md`
 
-## Plugins
+## Primary Plugin
 
-- `plugins/superpowers`
-- `plugins/salesforce-skills`
+- `plugins/salesforce-superpowers`
 
-## Cross-tool bundles
+Inside the plugin:
 
-- `claude/`
-- `gemini/`
-- `copilot/`
-
-Inside those:
-
-- Salesforce Skills bundles for Claude and Gemini
-- Superpowers bundles for Claude and Gemini
-- Salesforce Skills bundles for Copilot
-- Superpowers bundles for Copilot
-
-## Salesforce Skills plugin extras
-
-Inside `plugins/salesforce-skills`:
-
-- `skills/` for domain-specialist Salesforce guidance
-- `templates/` for starter development patterns
+- `skills/` for Salesforce specialists plus Superpowers engineering workflows
+- `templates/` for starter development and memory patterns
 - `checklists/` for delivery and review
 - `references/` for reusable implementation guidance
-- includes `salesforce-memory` for opt-in durable Salesforce memory summaries
-- includes `salesforce-evidence-mode` for trust classification
-- includes `salesforce-safe-change` for blast-radius checks
-- includes `salesforce-scenario-router` for choosing the smallest correct specialist path
-- includes `salesforce-source-check` for official-doc checks on release-sensitive claims
-- uses `salesforce-compact` for consistent low-token answer shapes
-- includes `salesforce-multi-agent-architect` for Salesforce-specific multi-agent system design
-- includes `salesforce-multi-agent-compact` for low-token Salesforce multi-agent system design
+- `agents/` for agent workflow assets
+- `assets/` for plugin icons
 
-Inside `plugins/superpowers`:
+## Cross-Tool Bundles
 
-- includes `multi-agent-architect` for generic multi-agent system design
-- includes `multi-agent-compact` for low-token generic multi-agent system design
+- `claude/salesforce-superpowers`
+- `gemini/salesforce-superpowers-extension`
+- `copilot/salesforce-superpowers`
 
-## What this repo does not store
+## Included Capabilities
+
+- Salesforce architecture, Apex, LWC, Flow, integrations, deployments, security, Data Cloud, Agentforce, MuleSoft, Marketing Cloud, and industry clouds
+- Salesforce memory, evidence mode, safe-change, scenario router, source check, reviewer, and compact low-token mode
+- Superpowers brainstorming, planning, TDD, systematic debugging, code review, git worktrees, and delivery workflows
+- one merged `salesforce-superpowers` entry skill that routes to the right specialist path
+- Generic and Salesforce-specific multi-agent design skills
+
+## What This Repo Does Not Store
 
 - your full `~/.codex/config.toml`
 - unrelated machine-local plugins

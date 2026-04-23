@@ -1,0 +1,14 @@
+{
+  "salesforce-superpowers": {
+    "type": "stdio",
+    "command": "docker",
+    "args": [
+      "run",
+      "-i",
+      "--rm",
+      "-v",
+      "${CLAUDE_PLUGIN_ROOT}/skills:/skills:ro",
+      "mcp-skill-hub"
+    ]
+  }
+}

@@ -1,66 +1,37 @@
-# Claude Salesforce Setup
+# Claude Salesforce Superpowers Setup
 
-This directory packages your Salesforce skill set for Claude Code.
+This directory packages the merged Salesforce Superpowers bundle for Claude Code.
 
 It provides:
 
-- reusable Salesforce skills under `claude/salesforce-skills/skills/`
-- a Claude-native plugin package under `claude/salesforce-skills/.claude-plugin/`
-- an install script to sync them into `~/.claude/skills/`
-- a helper script to create a project `.mcp.json` for the Salesforce MCP server
+- reusable skills under `claude/salesforce-superpowers/skills/`
+- a Claude plugin-like manifest under `claude/salesforce-superpowers/.claude-plugin/`
+- an install script to sync skills into `~/.claude/skills/`
+- a helper script to create a project `.mcp.json`
 
-## Install Skills
-
-```bash
-bash claude/install-salesforce-skills.sh
-```
-
-## Install All Claude Bundles
+## Install
 
 ```bash
 bash claude/install-all.sh
 ```
 
-Bundle catalog:
+Or:
 
 ```bash
-claude/claude-bundles.json
+bash claude/install-salesforce-superpowers.sh
 ```
 
-That syncs the bundled skills into:
-
-```bash
-~/.claude/skills/
-```
-
-## Add Salesforce MCP to a Claude project
-
-Run this from the repo root or provide the repo path explicitly:
+## Add Project MCP
 
 ```bash
 bash claude/create-project-mcp.sh /absolute/path/to/your/project
 ```
 
-This writes a `.mcp.json` file in the target project that mounts the bundled Salesforce skills through Docker.
+## What Claude Gets
 
-## Install Superpowers
-
-```bash
-bash claude/install-superpowers.sh
-```
-
-That syncs the bundled Superpowers workflows into:
-
-```bash
-~/.claude/skills/
-```
-
-## What Claude gets
-
-- `salesforce-compact`
-- `salesforce-reviewer`
-- `salesforce-architect`
-- all other bundled Salesforce specialist skills
-- a local Docker-backed `salesforce-skills` MCP server
-- Superpowers workflow skills
-- a Claude-native plugin manifest for `salesforce-skills`
+- Salesforce specialist skills
+- low-token Salesforce mode
+- hallucination-reduction reviewer and evidence gates
+- Salesforce memory and source-check workflows
+- Superpowers planning, TDD, debugging, review, and delivery workflows
+- local Docker-backed `salesforce-superpowers` MCP server config

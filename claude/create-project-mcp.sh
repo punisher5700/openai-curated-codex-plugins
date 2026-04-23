@@ -8,7 +8,7 @@ fi
 
 PROJECT_DIR="$1"
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-SKILLS_DIR="${SCRIPT_DIR}/salesforce-skills/skills"
+SKILLS_DIR="${SCRIPT_DIR}/salesforce-superpowers/skills"
 MCP_FILE="${PROJECT_DIR}/.mcp.json"
 
 mkdir -p "${PROJECT_DIR}"
@@ -16,7 +16,7 @@ mkdir -p "${PROJECT_DIR}"
 cat > "${MCP_FILE}" <<EOF
 {
   "mcpServers": {
-    "salesforce-skills": {
+    "salesforce-superpowers": {
       "command": "docker",
       "args": [
         "run",

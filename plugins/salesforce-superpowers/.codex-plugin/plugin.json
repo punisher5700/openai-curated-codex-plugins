@@ -1,0 +1,59 @@
+{
+  "name": "salesforce-superpowers",
+  "version": "1.0.0",
+  "description": "Unified Salesforce development, architecture, trust gates, memory, multi-agent design, planning, TDD, debugging, review, and delivery workflows.",
+  "author": {
+    "name": "Dinesh Choudhary",
+    "url": "https://github.com/punisher5700"
+  },
+  "homepage": "https://github.com/punisher5700/openai-curated-codex-plugins",
+  "repository": "https://github.com/punisher5700/openai-curated-codex-plugins",
+  "license": "MIT",
+  "keywords": [
+    "salesforce",
+    "superpowers",
+    "apex",
+    "lwc",
+    "flow",
+    "architecture",
+    "integration",
+    "agentforce",
+    "data-cloud",
+    "mulesoft",
+    "debugging",
+    "security",
+    "deployment",
+    "memory",
+    "evidence",
+    "safe-change",
+    "source-check",
+    "scenario-router",
+    "multi-agent",
+    "planning",
+    "tdd",
+    "code-review",
+    "workflow"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Salesforce Superpowers",
+    "shortDescription": "Salesforce skills plus Superpowers workflows in one plugin",
+    "longDescription": "Use Salesforce Superpowers for Salesforce architecture, Apex, LWC, Flow, integrations, security, deployment, memory, trust gates, source checks, low-token answers, multi-agent design, planning, TDD, systematic debugging, code review, and delivery workflows.",
+    "developerName": "Dinesh Choudhary",
+    "category": "Coding",
+    "capabilities": [
+      "Interactive",
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Use Salesforce Superpowers to solve this Salesforce development task with compact, trustworthy guidance.",
+      "Plan and implement this Salesforce change using TDD, safe-change checks, and verification.",
+      "Design a Salesforce architecture or multi-agent workflow with evidence, risks, and validation gates."
+    ],
+    "brandColor": "#00A1E0",
+    "composerIcon": "./assets/salesforce-skills-small.svg",
+    "logo": "./assets/salesforce-skills.svg",
+    "screenshots": []
+  }
+}

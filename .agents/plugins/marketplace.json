@@ -5,22 +5,10 @@
   },
   "plugins": [
     {
-      "name": "superpowers",
+      "name": "salesforce-superpowers",
       "source": {
         "source": "local",
-        "path": "./plugins/superpowers"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Coding"
-    },
-    {
-      "name": "salesforce-skills",
-      "source": {
-        "source": "local",
-        "path": "./plugins/salesforce-skills"
+        "path": "./plugins/salesforce-superpowers"
       },
       "policy": {
         "installation": "AVAILABLE",

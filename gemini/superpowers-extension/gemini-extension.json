@@ -1,6 +1,0 @@
-{
-  "name": "superpowers",
-  "version": "5.0.7",
-  "description": "Planning, debugging, TDD, and delivery workflows for Gemini CLI.",
-  "contextFileName": "GEMINI.md"
-}

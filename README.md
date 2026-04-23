@@ -1,56 +1,45 @@
 # OpenAI Curated Local Marketplace
 
-This is a user-managed Codex plugin marketplace.
+User-managed marketplace for durable Salesforce developer tooling.
 
-Purpose:
+## Primary Bundle
 
-- keep local plugins out of app-managed temp and cache directories
-- preserve plugin source across restarts and cache refreshes
-- make recovery easy if Codex plugin loading changes in the future
+- `salesforce-superpowers`
 
-Recommended Salesforce developer profile:
+This single bundle merges:
 
-- `salesforce-skills`
-- `github`
-- `superpowers`
-- `salesforce-skills` MCP
+- Salesforce architecture, development, debugging, integration, review, memory, evidence, source-check, safe-change, and low-token skills
+- Superpowers planning, TDD, debugging, code review, worktree, delivery, and multi-agent workflows
+- MCP skill-hub configuration for tools that can mount the skill bundle
+- Claude, Gemini, and Copilot compatible instruction bundles
 
-Plugins currently included:
-
-- `superpowers`
-- `salesforce-skills`
+## Codex
 
 Marketplace catalog:
 
 - `.agents/plugins/marketplace.json`
 
+Plugin source:
+
+- `plugins/salesforce-superpowers`
+
 Codex config points to this marketplace from:
 
 - `~/.codex/config.toml`
 
-Documentation:
+## Cross-Tool Bundles
+
+- `claude/`
+- `gemini/`
+- `copilot/`
+
+Install instructions:
 
 - `INSTALL-EVERYWHERE.md`
 - `docs/SETUP.md`
 - `docs/MCP-SERVERS.md`
 - `docs/DEPENDENCIES.md`
 - `docs/REPO-CONTENTS.md`
-
-Cross-tool bundles:
-
-- `claude/`
-- `gemini/`
-- `copilot/`
-
-Cross-tool coverage included here:
-
-- Salesforce Skills for Codex, Claude, Gemini, and Copilot
-- Superpowers for Codex, Claude, Gemini, and Copilot
-- Salesforce memory-saving workflow for durable project context and decisions
-- Salesforce evidence, safe-change, and memory trust gates
-- Salesforce scenario router and official source check
-- Multi-agent architecture design skills for generic and Salesforce tasks
-- Low-token multi-agent architecture design skills for generic and Salesforce tasks
 
 Helper files:
 

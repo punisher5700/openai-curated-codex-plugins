@@ -1,18 +1,11 @@
 {
   "bundles": [
     {
-      "id": "salesforce-skills",
-      "name": "Salesforce Skills",
+      "id": "salesforce-superpowers",
+      "name": "Salesforce Superpowers",
       "type": "copilot-instructions-bundle",
-      "entry": "salesforce-skills/.github/copilot-instructions.md",
-      "install": "install-salesforce-skills.sh"
-    },
-    {
-      "id": "superpowers",
-      "name": "Superpowers",
-      "type": "copilot-instructions-bundle",
-      "entry": "superpowers/.github/copilot-instructions.md",
-      "install": "install-superpowers.sh"
+      "entry": "salesforce-superpowers/.github/copilot-instructions.md",
+      "install": "install-salesforce-superpowers.sh"
     }
   ]
 }

@@ -1,0 +1,19 @@
+{
+  "name": "salesforce-superpowers",
+  "version": "1.0.0",
+  "description": "Unified Salesforce skills and Superpowers workflows for Gemini CLI.",
+  "contextFileName": "GEMINI.md",
+  "mcpServers": {
+    "salesforce-superpowers": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-v",
+        "${extensionPath}/skills:/skills:ro",
+        "mcp-skill-hub"
+      ]
+    }
+  }
+}

@@ -1,15 +1,10 @@
 # Setup Guide
 
-This repository is a user-managed Codex marketplace. It contains:
+This repository is a user-managed Codex marketplace for one merged Salesforce developer bundle:
 
-- plugin bundles under `plugins/`
-- marketplace catalog under `.agents/plugins/marketplace.json`
-- plugin-local skills
-- plugin-local MCP config where applicable
+- `salesforce-superpowers`
 
 ## Clone Location
-
-Clone this repo to the same path on each machine when possible:
 
 ```bash
 mkdir -p ~/.codex/marketplaces
@@ -17,8 +12,6 @@ git clone https://github.com/punisher5700/openai-curated-codex-plugins.git ~/.co
 ```
 
 ## Fastest Setup
-
-On a new machine, you can bootstrap most of the setup with:
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/punisher5700/openai-curated-codex-plugins/main/scripts/setup-on-new-machine.sh | bash
@@ -30,9 +23,7 @@ Or, after cloning:
 bash scripts/setup-on-new-machine.sh
 ```
 
-## Install or Verify Dependencies
-
-Run:
+## Dependencies
 
 ```bash
 cd ~/.codex/marketplaces/openai-curated
@@ -49,23 +40,20 @@ Add this marketplace to `~/.codex/config.toml`:
 source_type = "local"
 source = "/Users/<your-user>/.codex/marketplaces/openai-curated"
 
-[plugins."superpowers@openai-curated"]
-enabled = true
-
-[plugins."salesforce-skills@openai-curated"]
+[plugins."salesforce-superpowers@openai-curated"]
 enabled = true
 
 [plugins."github@openai-curated"]
 enabled = true
 
-[mcp_servers.salesforce-skills]
+[mcp_servers.salesforce-superpowers]
 command = "docker"
 args = [
   "run",
   "-i",
   "--rm",
   "-v",
-  "/Users/<your-user>/.codex/skill-bundles/salesforce:/skills:ro",
+  "/Users/<your-user>/.codex/marketplaces/openai-curated/plugins/salesforce-superpowers/skills:/skills:ro",
   "mcp-skill-hub",
 ]
 type = "stdio"
@@ -73,24 +61,11 @@ type = "stdio"
 
 Replace `<your-user>` with the account name on that machine.
 
-This is the recommended minimal setup for Salesforce development:
-
-- `salesforce-skills`
-- `github`
-- `superpowers`
-- `salesforce-skills` MCP
-
-You can also start from:
-
-- `config/config.toml.example`
-
 ## Restart Codex
 
-After cloning and updating `config.toml`, restart Codex so it reloads the marketplace and plugin definitions.
+Restart Codex after changing `config.toml`.
 
 ## Updating
-
-To pull future changes:
 
 ```bash
 git -C ~/.codex/marketplaces/openai-curated pull
