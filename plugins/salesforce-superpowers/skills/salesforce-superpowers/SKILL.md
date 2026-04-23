@@ -68,6 +68,13 @@ For implementation work:
 - Keep shared context minimal and pass only the task slice each lane needs.
 - Fall back to single-agent execution when the task is tightly coupled or the client cannot run multiple agents.
 
+For review, remediation, and testing work:
+
+- treat security and correctness findings as fixable work, not just commentary
+- add focused tests when behavior changes or risk is non-trivial
+- prefer edge-case and governor-sensitive tests over broad low-signal test volume
+- use `salesforce-trust-mode` for final security/trust gating before completion
+
 ## Graph Workflow
 
 For graph or corpus analysis:

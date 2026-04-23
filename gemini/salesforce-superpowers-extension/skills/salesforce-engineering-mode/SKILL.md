@@ -12,6 +12,7 @@ Use this skill instead of separate Superpowers workflow skills.
 - brainstorming and design clarification
 - implementation planning
 - TDD-first development
+- edge-case and limit-oriented test design
 - systematic debugging
 - code review request and review intake
 - verification before completion
@@ -67,6 +68,7 @@ Do not parallelize when:
 - prefer a failing test or concrete failing reproduction first
 - implement the smallest correct fix
 - keep blast radius small
+- when a fix changes behavior, update or add tests in the same flow
 
 ### 4. Debugging
 
@@ -81,6 +83,32 @@ Do not parallelize when:
 - check results directly
 - request or perform review for risky changes
 - separate confirmed status from assumptions
+- do not stop at "compiles" when the task implies production safety
+
+### 5a. Test to limit
+
+When code quality or reliability matters, add the highest-value test matrix the code can support.
+
+Always consider:
+
+- happy path
+- null or empty input
+- bulk input
+- duplicate input
+- permission or sharing-sensitive path
+- negative/error path
+- regression case for the reported bug
+
+For Salesforce code also consider:
+
+- governor-sensitive batch size
+- SOQL/DML volume pressure
+- recursion or automation overlap
+- record-locking-sensitive path if relevant
+- async handoff correctness
+- callout retry or failure handling if relevant
+
+Prefer a compact test set that covers the real failure modes over many weak tests.
 
 ### 6. Multi-agent / decomposition
 
@@ -105,7 +133,7 @@ For complex implementation:
   - Integration lane
   - choose only the lanes actually needed
 - Validator lane
-  - test, review, trust check, deployment risk
+  - test, review, trust check, deployment risk, limit-sensitive checks
 
 For debugging:
 
@@ -119,6 +147,12 @@ For review-and-fix:
 - Review lane
 - Fix lane
 - Retest lane
+
+For test-heavy work:
+
+- Test-design lane
+- Implementation lane
+- Limit/edge validator lane
 
 ## Output Contract
 
@@ -137,6 +171,16 @@ For complex tasks use:
 Plan:
 Lanes:
 Merge:
+Verify:
+Risk:
+```
+
+For testing-heavy tasks use:
+
+```text
+Plan:
+Tests:
+Limits:
 Verify:
 Risk:
 ```
