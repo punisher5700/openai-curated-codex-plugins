@@ -15,6 +15,39 @@ Use this as the merged entry point for Salesforce work.
 - For current Salesforce release or launch claims, check official Salesforce sources before stating as fact.
 - Ask for missing org-specific details only when guessing would create material risk.
 
+## Token Estimate Mode
+
+Only show token estimation when the user asks for it with phrasing such as:
+
+- `show token estimate`
+- `token estimate`
+- `token profile`
+- `low token`
+- `keep it compact`
+
+When requested, prepend a short block before the main answer:
+
+```text
+Token profile: low | medium | high
+Estimated usage: ~N to ~M tokens
+```
+
+Use rough bands, not fake precision:
+
+- `low`: quick fix, one method, one error, one direct answer
+  - usually `~150 to ~500`
+- `medium`: small multi-file debugging, focused review, one implementation plus verify
+  - usually `~500 to ~1.5k`
+- `high`: architecture, broad refactor, long review, graph work, or multi-lane execution
+  - usually `~1.5k+`
+
+Keep the estimate conservative and compact:
+
+- include it only when asked
+- do not explain tokenizer internals
+- do not claim billing-accurate counts
+- when scope is likely to expand, say `may grow if more files or logs are needed`
+
 ## Routing
 
 Choose the smallest specialist path:
@@ -124,3 +157,5 @@ Known:
 Unknown:
 Need:
 ```
+
+When token estimate mode is active, place the token block above the normal output contract and keep the rest of the answer compact.

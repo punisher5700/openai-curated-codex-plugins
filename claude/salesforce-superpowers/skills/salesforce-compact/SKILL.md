@@ -24,6 +24,43 @@ Default target:
 - one best answer
 - no speculative filler
 
+## Token Estimate Contract
+
+Only print token estimation when the user asks for it.
+
+Accepted triggers include:
+
+- `show token estimate`
+- `token estimate`
+- `token profile`
+- `keep it low-token`
+
+When triggered, print this before the answer:
+
+```text
+Token profile: low | medium | high
+Estimated usage: ~N to ~M tokens
+```
+
+Use rough planning bands:
+
+- `low`
+  - one method, one class, one error, one direct fix
+  - usually `~150 to ~500`
+- `medium`
+  - focused review, one fix plus test guidance, small multi-file issue
+  - usually `~500 to ~1.5k`
+- `high`
+  - broad review, architecture, graph analysis, many files, or multi-step remediation
+  - usually `~1.5k+`
+
+Rules:
+
+- do not show this block unless asked
+- do not pretend it is the exact model token count
+- if the task may grow after reading more files, say `may grow if scope expands`
+- keep the estimate to two lines maximum
+
 ## Truth Policy
 
 Never optimize brevity at the cost of correctness.
@@ -184,6 +221,12 @@ For architecture:
 - `Use:` chosen pattern
 - `Why:` one line
 - `Risk:` one line
+
+If the user asks both for compact output and token estimate:
+
+- print the two-line token block
+- then continue with the ultra-compact shape
+- do not add extra commentary about token usage
 
 ## Verification Gate
 
