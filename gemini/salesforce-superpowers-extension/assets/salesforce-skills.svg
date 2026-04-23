@@ -1,6 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Salesforce Skills logo">
-  <rect width="256" height="256" rx="56" fill="#00A1E0"/>
-  <path d="M70 146c0-21 17-38 38-38 7-17 24-29 44-29 27 0 49 22 49 49v2c13 4 22 16 22 30 0 17-14 31-31 31H101c-17 0-31-14-31-31v-14Z" fill="#ffffff"/>
-  <path d="M50 151c0-14 11-25 25-25 3 0 6 .5 9 1.5 5-11 16-19 29-19 4 0 8 .8 11 2.2-10 5-17 15-19 26.7H99c-15 0-27 12-27 27 0 10 5 19 13 24H76c-15 0-26-17-26-37Z" fill="#d6f3ff"/>
-  <path d="M112 118h31c10 0 18 8 18 18 0 7-4 13-10 16l14 23h-21l-11-19h-8v19h-18v-57Zm18 14v12h11c4 0 7-3 7-6s-3-6-7-6h-11Z" fill="#00A1E0"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Salesforce Superpowers logo">
+  <rect width="256" height="256" rx="56" fill="#eef1f5"/>
+  <g fill="#113b77">
+    <circle cx="78" cy="70" r="16"/>
+    <circle cx="178" cy="70" r="16"/>
+    <circle cx="128" cy="132" r="82"/>
+  </g>
+  <circle cx="128" cy="132" r="63" fill="#ffffff"/>
+  <circle cx="128" cy="132" r="49" fill="#20a7df"/>
+  <g fill="#113b77">
+    <path d="M93 99c8-7 18-11 30-11 14 0 26 5 35 13 7 6 11 14 13 22-7-5-15-8-22-8-6 0-11 2-17 5-5 3-12 4-19 4-12 0-23-4-31-12-4-4-7-9-8-13 5-1 12-1 19 0Z"/>
+    <path d="M102 122c4 0 8 3 11 8l4 7c1 2 3 3 5 3h12c2 0 4-1 5-3l4-7c3-5 7-8 11-8 7 0 13 5 16 12l-5 20c-2 8-8 13-16 13h-28c-2 0-4-1-5-3l-5-7-5 7c-1 2-3 3-5 3H84c-8 0-14-5-16-13l-5-20c3-7 9-12 16-12h23Z"/>
+    <path d="M122 142h12l4 8h-20l4-8Z"/>
+  </g>
 </svg>
