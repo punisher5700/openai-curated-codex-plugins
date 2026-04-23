@@ -44,6 +44,12 @@ Expand only if the task truly needs more specialization.
 
 For execution-oriented coding tasks, prefer 3 to 5 agents.
 
+For large-file review tasks, prefer:
+
+- 1 coordinator
+- 2 to 4 chunk reviewers
+- 1 validator or merge agent
+
 ## Agent Format
 
 For each agent, give only:
@@ -93,6 +99,21 @@ For coding and delivery tasks, prefer:
 - Validator
 - Release
 
+For large class review or security review, prefer:
+
+- Coordinator
+- Chunk Review Lanes
+- Merge Or Validator
+
+Chunk Review Lanes should split by logical region such as:
+
+- public entry methods
+- query and DML region
+- async or integration region
+- helpers or utility methods
+
+Never split by arbitrary line count when that would break control-flow context.
+
 ## Evidence Rules
 
 Classify important claims as:
@@ -117,6 +138,7 @@ Make these explicit when relevant:
 - direct integration vs middleware
 - when to stop and ask for metadata, logs, screenshots, or schema details
 - which parts can run in parallel versus which must stay on the critical path
+- when a large class should be chunked into method clusters for parallel review
 
 ## Salesforce Gates
 
@@ -162,6 +184,8 @@ Mention only:
 - avoid duplicate context between lanes
 - reuse one validator instead of repeating checks per lane unless necessary
 - do not expand to large swarms unless the task truly needs them
+- for large class review, give each lane only its chunk plus a minimal dependency note
+- merge duplicate findings centrally instead of letting each lane restate shared issues
 
 ## Flowchart
 

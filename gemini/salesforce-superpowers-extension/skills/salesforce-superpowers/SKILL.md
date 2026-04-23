@@ -86,6 +86,7 @@ Treat a task as complex when any of these apply:
 - likely long-running debugging across several hypotheses
 - code review plus fix plus retest workflow
 - enough scope that sequential execution would waste time
+- one large class, trigger handler, service, or utility file with enough independent methods or regions to review in parallel
 
 ## Engineering Workflow
 
@@ -108,6 +109,28 @@ For review, remediation, and testing work:
 - add focused tests when behavior changes or risk is non-trivial
 - prefer edge-case and governor-sensitive tests over broad low-signal test volume
 - use `salesforce-trust-mode` for final security/trust gating before completion
+- when a large class or dense file is being reviewed, prefer chunked review lanes plus one merge lane instead of one long reviewer pass
+- chunk by method cluster or logical region, not by arbitrary line count
+- keep each lane narrow and return only issues, fixes, and verify notes
+- use one final merge lane to remove duplicates and resolve cross-chunk dependencies
+
+## Parallel Review Scenarios
+
+Prefer compact multi-lane review when it lowers total token use or turnaround time for:
+
+- large Apex class review
+- trigger handler review with several execution branches
+- security-focused review of mixed query, DML, and access control logic
+- bug triage where reproduction, root cause, and fix can proceed independently
+- review plus fix plus retest workflows
+- implementation spanning Apex, LWC, Flow, or integration slices with low overlap
+
+Do not use broad parallelization when:
+
+- the task is one narrow method
+- the likely fix is in one codepath
+- every lane would need most of the same context
+- merge cost would outweigh review savings
 
 ## Graph Workflow
 

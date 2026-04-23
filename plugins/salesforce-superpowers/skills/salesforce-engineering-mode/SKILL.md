@@ -120,6 +120,66 @@ Prefer a compact test set that covers the real failure modes over many weak test
 - keep each lane prompt narrow to save tokens
 - merge and verify centrally before claiming completion
 
+## Large Class Review Policy
+
+When the user asks to review, debug, secure, or validate a large Apex class or similarly dense file, prefer chunked review over one long sequential pass.
+
+Treat a single file as chunk-worthy when any of these apply:
+
+- long class with multiple methods or regions
+- mixed concerns such as query logic, DML, sharing, async, and helper logic in one file
+- dense trigger handler or service class
+- security-sensitive code paths
+- enough code that one-pass review would produce a long, high-token response
+
+Use this default chunk strategy:
+
+- one thin coordinator lane
+  - map methods or logical regions
+  - define chunk boundaries
+  - track cross-method dependencies
+- 2 to 4 review lanes
+  - each lane reviews one chunk only
+  - each lane looks for correctness, bulk safety, CRUD/FLS/sharing, recursion, limits, null handling, and test gaps
+- one merge or validator lane
+  - deduplicate findings
+  - resolve cross-chunk interactions
+  - rank issues by severity
+
+Chunk by logical units, not arbitrary line count, preferring:
+
+- method groups
+- query or DML region
+- branching or stateful region
+- helper cluster
+- public entrypoints versus internal helpers
+
+Do not chunk when:
+
+- the file is short
+- the problem is clearly one method
+- cross-method coupling is so high that chunking would duplicate too much context
+
+For chunked review output, prefer:
+
+```text
+Plan:
+Chunks:
+Findings:
+Cross-chunk risks:
+Fix:
+Verify:
+```
+
+Each lane should return only:
+
+- chunk summary
+- issues
+- smallest fix
+- tests or checks needed
+
+The merge lane should remove duplicate findings and keep one final compact answer.
+
 ## Default Lane Shapes
 
 For complex implementation:
@@ -147,6 +207,26 @@ For review-and-fix:
 - Review lane
 - Fix lane
 - Retest lane
+
+For large class review:
+
+- Coordinator lane
+- Chunk review lanes
+- Merge and validation lane
+
+For security-heavy review:
+
+- Code-path review lane
+- CRUD/FLS/sharing lane
+- Injection/secrets/auth lane
+- Validation lane
+
+For performance or governor-risk review:
+
+- Query/DML lane
+- Bulk/limit lane
+- Async/locking lane
+- Validation lane
 
 For test-heavy work:
 
