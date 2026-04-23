@@ -1,0 +1,16 @@
+{
+  "mcpServers": {
+    "salesforce-superpowers": {
+      "command": "docker",
+      "args": [
+        "run",
+        "-i",
+        "--rm",
+        "-v",
+        "${PLUGIN_ROOT}/skills:/skills:ro",
+        "mcp-skill-hub"
+      ],
+      "type": "stdio"
+    }
+  }
+}

@@ -38,6 +38,7 @@
     "workflow"
   ],
   "skills": "./skills/",
+  "mcpServers": "./.mcp.json",
   "interface": {
     "displayName": "Salesforce Superpowers",
     "shortDescription": "Salesforce, Superpowers, and Graphify workflows in one plugin",
@@ -52,8 +53,6 @@
     "defaultPrompt": [
       "Use Salesforce Superpowers to solve this Salesforce development task with compact, trustworthy guidance.",
       "Plan and implement this Salesforce change using TDD, safe-change checks, and verification.",
-      "Design a Salesforce architecture or multi-agent workflow with evidence, risks, and validation gates."
-      ,
       "Build a Graphify knowledge graph for this Salesforce codebase or document set."
     ],
     "brandColor": "#00A1E0",

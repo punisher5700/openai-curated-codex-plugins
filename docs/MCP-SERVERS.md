@@ -6,6 +6,12 @@ The merged MCP-facing bundle is:
 
 It mounts the unified skill directory through `mcp-skill-hub`.
 
+The Codex plugin also includes plugin-local MCP metadata at:
+
+```text
+plugins/salesforce-superpowers/.mcp.json
+```
+
 ## Codex Example
 
 ```toml
