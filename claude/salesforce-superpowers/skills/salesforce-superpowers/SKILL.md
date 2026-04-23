@@ -1,6 +1,6 @@
 ---
 name: salesforce-superpowers
-description: Use as the single entry point for Salesforce development with Superpowers, Graphify, and documentation workflows. Routes Salesforce tasks through compact answers, evidence checks, safe-change gates, source checks, memory, planning, TDD, debugging, review, delivery, multi-agent workflows, knowledge-graph analysis, and professional doc generation while loading deeper specialist skills only when needed.
+description: Use as the single entry point for Salesforce development with merged engineering, graph, and documentation workflows. Routes Salesforce tasks through compact answers, evidence checks, safe-change gates, source checks, memory, planning, debugging, review, delivery, graph analysis, and professional doc generation while loading deeper specialist skills only when needed.
 ---
 
 # Salesforce Superpowers
@@ -24,10 +24,11 @@ Choose the smallest specialist path:
 - Use safe-change before modifying production-impacting behavior.
 - Use reviewer before final answers, designs, or code that could be wrong or risky.
 - Use memory only for durable non-secret project facts, decisions, assumptions, and preferences.
-- Use Graphify when the task needs a knowledge graph, architecture map, codebase graph, dependency graph, cross-document analysis, GraphRAG JSON, clustered communities, or `graphify-out` artifacts.
+- Use `salesforce-graph-mode` when the task needs a knowledge graph, architecture map, codebase graph, dependency graph, cross-document analysis, GraphRAG JSON, clustered communities, or `graphify-out` artifacts.
 - Use `salesforce-doc-mode` when the task is to create professional documentation for the codebase, architecture, integrations, modules, runbooks, or onboarding.
+- Use `salesforce-engineering-mode` when the task needs planning, TDD, debugging, code review, verification, multi-agent design, or branch-completion workflow help.
 
-## Superpowers Workflow
+## Engineering Workflow
 
 For implementation work:
 
@@ -39,13 +40,13 @@ For implementation work:
 - Use code review gates for risky changes.
 - Use multi-agent design only when task decomposition materially helps.
 
-## Graphify Workflow
+## Graph Workflow
 
 For graph or corpus analysis:
 
-- Prefer `/graphify <path>` for a full graph.
-- Use `/graphify <path> --update` for incremental refreshes.
-- Use `/graphify query "<question>"` when an existing graph can answer with less token load.
+- Prefer full graph generation for a repo or target path.
+- Use incremental refreshes when a graph already exists.
+- Use graph-backed query flow when an existing graph can answer with less token load.
 - Preserve Graphify's extracted, inferred, and ambiguous edge labeling.
 - Treat Graphify output as evidence, not as a replacement for official Salesforce source checks.
 

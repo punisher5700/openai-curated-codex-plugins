@@ -28,8 +28,8 @@ Inside the plugin:
 
 - Salesforce architecture, Apex, LWC, Flow, integrations, deployments, security, Data Cloud, Agentforce, MuleSoft, Marketing Cloud, and industry clouds
 - Salesforce memory, evidence mode, safe-change, scenario router, source check, reviewer, and compact low-token mode
-- Superpowers brainstorming, planning, TDD, systematic debugging, code review, git worktrees, and delivery workflows
-- Graphify knowledge graph generation, GraphRAG JSON, clustered communities, and graph audit reports
+- merged engineering workflow mode
+- merged graph workflow mode
 - professional codebase documentation mode
 - one merged `salesforce-superpowers` entry skill that routes to the right specialist path
 - Generic and Salesforce-specific multi-agent design skills

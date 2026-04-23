@@ -3,8 +3,8 @@
 Unified plugin combining:
 
 - Salesforce Skills
-- Superpowers workflow skills
-- Graphify knowledge graph skill
+- merged engineering workflow mode
+- merged graph workflow mode
 - professional documentation mode
 
 Use it for Salesforce development with:
@@ -15,18 +15,18 @@ Use it for Salesforce development with:
 - safe-change checks
 - Salesforce architecture and implementation guidance
 - multi-agent architecture design
-- planning, TDD, debugging, review, and delivery workflows
+- planning, TDD, debugging, review, verification, multi-agent, and delivery workflows
 - knowledge graph generation, GraphRAG JSON, clustered communities, and graph audit reports
 - professional architecture, module, integration, onboarding, and runbook docs
 
 Skill count:
 
 - 35 Salesforce skills
-- 16 Superpowers skills
-- 1 Graphify skill
+- 1 engineering workflow skill
+- 1 graph workflow skill
 - 1 documentation skill
 - 1 merged `salesforce-superpowers` entry skill
-- 54 total skills
+- 39 total skills
 
 Support folders:
 
