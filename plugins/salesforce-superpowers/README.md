@@ -24,9 +24,10 @@ Skill count:
 - 35 Salesforce skills
 - 1 engineering workflow skill
 - 1 graph workflow skill
+- 1 agent workflow skill
 - 1 documentation skill
 - 1 merged `salesforce-superpowers` entry skill
-- 39 total skills
+- 40 total skills
 
 Support folders:
 

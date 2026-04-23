@@ -26,7 +26,8 @@ Choose the smallest specialist path:
 - Use memory only for durable non-secret project facts, decisions, assumptions, and preferences.
 - Use `salesforce-graph-mode` when the task needs a knowledge graph, architecture map, codebase graph, dependency graph, cross-document analysis, GraphRAG JSON, clustered communities, or `graphify-out` artifacts.
 - Use `salesforce-doc-mode` when the task is to create professional documentation for the codebase, architecture, integrations, modules, runbooks, or onboarding.
-- Use `salesforce-engineering-mode` when the task needs planning, TDD, debugging, code review, verification, multi-agent design, or branch-completion workflow help.
+- Use `salesforce-engineering-mode` when the task needs planning, TDD, debugging, code review, verification, or branch-completion workflow help.
+- Use `salesforce-agent-mode` when the task needs multi-agent system design for Salesforce or integrations and the answer should stay low-token and low-hallucination.
 
 ## Engineering Workflow
 
