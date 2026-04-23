@@ -32,6 +32,13 @@ For Graphify:
 - treat graph edges as extracted, inferred, or ambiguous evidence
 - use existing graph outputs to reduce repeated context loading where possible
 
+For documentation:
+
+- when asked for docs, create professional Markdown grounded in the actual codebase
+- document current implementation, dependencies, flows, risks, and gaps
+- use Mermaid diagrams when they materially improve clarity
+- separate facts from assumptions
+
 For multi-agent designs:
 
 - prefer compact 4 to 6 agent workflows

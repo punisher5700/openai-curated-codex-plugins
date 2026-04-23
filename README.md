@@ -11,6 +11,7 @@ This single bundle merges:
 - Salesforce architecture, development, debugging, integration, review, memory, evidence, source-check, safe-change, and low-token skills
 - Superpowers planning, TDD, debugging, code review, worktree, delivery, and multi-agent workflows
 - Graphify knowledge graph, GraphRAG JSON, clustered community, and graph audit workflows
+- professional codebase documentation workflows
 - MCP skill-hub configuration for tools that can mount the skill bundle
 - Claude, Gemini, and Copilot compatible instruction bundles
 

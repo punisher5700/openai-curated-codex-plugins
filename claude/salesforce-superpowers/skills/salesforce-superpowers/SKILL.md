@@ -1,6 +1,6 @@
 ---
 name: salesforce-superpowers
-description: Use as the single entry point for Salesforce development with Superpowers and Graphify workflows. Routes Salesforce tasks through compact answers, evidence checks, safe-change gates, source checks, memory, planning, TDD, debugging, review, delivery, multi-agent workflows, and knowledge-graph analysis while loading deeper specialist skills only when needed.
+description: Use as the single entry point for Salesforce development with Superpowers, Graphify, and documentation workflows. Routes Salesforce tasks through compact answers, evidence checks, safe-change gates, source checks, memory, planning, TDD, debugging, review, delivery, multi-agent workflows, knowledge-graph analysis, and professional doc generation while loading deeper specialist skills only when needed.
 ---
 
 # Salesforce Superpowers
@@ -25,6 +25,7 @@ Choose the smallest specialist path:
 - Use reviewer before final answers, designs, or code that could be wrong or risky.
 - Use memory only for durable non-secret project facts, decisions, assumptions, and preferences.
 - Use Graphify when the task needs a knowledge graph, architecture map, codebase graph, dependency graph, cross-document analysis, GraphRAG JSON, clustered communities, or `graphify-out` artifacts.
+- Use `salesforce-doc-mode` when the task is to create professional documentation for the codebase, architecture, integrations, modules, runbooks, or onboarding.
 
 ## Superpowers Workflow
 
@@ -47,6 +48,17 @@ For graph or corpus analysis:
 - Use `/graphify query "<question>"` when an existing graph can answer with less token load.
 - Preserve Graphify's extracted, inferred, and ambiguous edge labeling.
 - Treat Graphify output as evidence, not as a replacement for official Salesforce source checks.
+
+## Documentation Workflow
+
+For professional docs:
+
+- inspect code and config before writing
+- document the current implementation, not imagined intent
+- use repository names directly
+- include diagrams only when they improve understanding
+- mark unknowns and inferences explicitly
+- prefer Markdown docs that can live in the repo
 
 ## Output Contract
 
