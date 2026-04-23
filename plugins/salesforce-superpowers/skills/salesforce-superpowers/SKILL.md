@@ -113,6 +113,7 @@ For review, remediation, and testing work:
 - chunk by method cluster or logical region, not by arbitrary line count
 - keep each lane narrow and return only issues, fixes, and verify notes
 - use one final merge lane to remove duplicates and resolve cross-chunk dependencies
+- force `salesforce-trust-mode` on the final merge for chunked large-class review, security-heavy review, and any chunked review that proposes code fixes
 
 ## Parallel Review Scenarios
 
@@ -124,6 +125,13 @@ Prefer compact multi-lane review when it lowers total token use or turnaround ti
 - bug triage where reproduction, root cause, and fix can proceed independently
 - review plus fix plus retest workflows
 - implementation spanning Apex, LWC, Flow, or integration slices with low overlap
+
+For these chunked review paths, the final answer must come from a trust-gated merge that:
+
+- separates confirmed findings from inferred risks
+- avoids unsupported cross-chunk conclusions
+- checks for shared-state, call-order, and dependency interactions
+- keeps the final answer compact
 
 Do not use broad parallelization when:
 

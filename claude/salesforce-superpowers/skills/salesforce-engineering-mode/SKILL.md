@@ -145,6 +145,7 @@ Use this default chunk strategy:
   - deduplicate findings
   - resolve cross-chunk interactions
   - rank issues by severity
+  - run final trust-gated review before completion
 
 Chunk by logical units, not arbitrary line count, preferring:
 
@@ -179,6 +180,20 @@ Each lane should return only:
 - tests or checks needed
 
 The merge lane should remove duplicate findings and keep one final compact answer.
+
+The merge lane must always apply `salesforce-trust-mode` for:
+
+- large class review
+- security-sensitive chunked review
+- trigger handler review with multiple branches
+- any chunked review that proposes fixes, remediation, or safety claims
+
+The final merge should:
+
+- separate confirmed findings from inferred risks
+- reject unsupported cross-chunk assumptions
+- check for missed shared-state or call-order interactions
+- ensure final fixes are not marked complete without verify steps
 
 ## Default Lane Shapes
 
