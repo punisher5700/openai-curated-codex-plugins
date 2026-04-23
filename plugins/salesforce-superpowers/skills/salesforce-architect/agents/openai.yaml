@@ -1,4 +1,0 @@
-interface:
-  display_name: "Salesforce Architect"
-  short_description: "Salesforce architecture and build guidance"
-  default_prompt: "Use $salesforce-architect to design or implement a secure, scalable Salesforce solution."

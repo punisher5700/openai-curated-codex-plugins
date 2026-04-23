@@ -21,13 +21,13 @@ Choose the smallest specialist path:
 
 - Apex, LWC, Flow, deployment, security, integration, data model, Agentforce, Data Cloud, MuleSoft, Marketing Cloud, CPQ, Revenue Cloud, Commerce, Experience Cloud, Field Service, Health Cloud, Financial Services Cloud, Education Cloud, Nonprofit Cloud, Industries, Slack, Heroku, CRM Analytics.
 - Use compact mode for quick fixes, explanations, debugging, and reviews.
-- Use safe-change before modifying production-impacting behavior.
-- Use reviewer before final answers, designs, or code that could be wrong or risky.
+- Use `salesforce-trust-mode` when the answer or change needs evidence gating, source freshness checks, safe-change review, or final trust audit.
 - Use memory only for durable non-secret project facts, decisions, assumptions, and preferences.
 - Use `salesforce-graph-mode` when the task needs a knowledge graph, architecture map, codebase graph, dependency graph, cross-document analysis, GraphRAG JSON, clustered communities, or `graphify-out` artifacts.
 - Use `salesforce-doc-mode` when the task is to create professional documentation for the codebase, architecture, integrations, modules, runbooks, or onboarding.
 - Use `salesforce-engineering-mode` when the task needs planning, TDD, debugging, code review, verification, or branch-completion workflow help.
 - Use `salesforce-agent-mode` when the task needs multi-agent system design for Salesforce or integrations and the answer should stay low-token and low-hallucination.
+- Use `salesforce-design-mode` when the task is mainly architecture, data model, security design, or DevOps workflow design.
 
 ## Engineering Workflow
 

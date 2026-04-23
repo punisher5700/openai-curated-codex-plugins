@@ -1,4 +1,0 @@
-interface:
-  display_name: "Salesforce Reviewer"
-  short_description: "Final-pass audit for Salesforce answer reliability"
-  default_prompt: "Use $salesforce-reviewer to audit this Salesforce answer or change for unsupported claims, wrong tool choice, and platform risk."
