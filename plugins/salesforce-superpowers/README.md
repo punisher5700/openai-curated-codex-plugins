@@ -19,9 +19,15 @@ Use it for Salesforce development with:
 - knowledge graph generation, GraphRAG JSON, clustered communities, and graph audit reports
 - professional architecture, module, integration, onboarding, and runbook docs
 
+Recent official Salesforce coverage reflected in this bundle:
+
+- Spring '26 developer release changes that affect LWC, Apex, integration security, Agentforce, and Data Cloud work
+- April 2026 Developer Edition workflow updates for Agentforce Vibes IDE and Salesforce Hosted MCP Servers
+- guidance that distinguishes local DX MCP development workflows from Salesforce-hosted MCP data and action workflows
+
 Skill count:
 
-- 35 Salesforce skills
+- 25 Salesforce skills
 - 1 engineering workflow skill
 - 1 graph workflow skill
 - 1 agent workflow skill
@@ -30,7 +36,7 @@ Skill count:
 - 1 validation workflow skill
 - 1 documentation skill
 - 1 merged `salesforce-superpowers` entry skill
-- 39 total skills
+- 33 total skills
 
 Support folders:
 

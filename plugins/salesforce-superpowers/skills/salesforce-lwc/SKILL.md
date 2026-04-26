@@ -11,6 +11,7 @@ Design LWCs that are secure, reusable, performant, and aligned with platform-nat
 
 - Component boundaries and public API
 - LDS, UI API, wire adapters, and imperative Apex
+- GraphQL query and mutation usage when UI API shapes are a better fit than custom Apex
 - Eventing, state flow, and server contract design
 - Accessibility, SLDS usage, and responsive behavior
 - Performance, caching, and network minimization
@@ -19,6 +20,7 @@ Design LWCs that are secure, reusable, performant, and aligned with platform-nat
 ## Rules
 
 - Prefer LDS and UI API before custom Apex.
+- Prefer official platform client APIs such as `lightning/graphql` and base-component type definitions before inventing custom abstractions.
 - Keep data contract and presentation concerns separate.
 - Make accessibility and security first-order design constraints.
 - Minimize server calls and cache where appropriate.

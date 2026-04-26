@@ -15,6 +15,7 @@ Design deployment and release workflows that are repeatable, low-risk, and align
 - Unlocked packages, second-generation packaging, and release boundaries
 - CI/CD pipelines, promotion paths, rollback planning, and environment drift
 - Deployment failure triage and release governance
+- Local CLI workflows versus org-hosted Agentforce Vibes IDE workflows
 
 ## Rules
 
@@ -23,6 +24,7 @@ Design deployment and release workflows that are repeatable, low-risk, and align
 - Call out metadata types that behave poorly in parallel or conflict-heavy deployments.
 - Separate validation, promotion, and rollback strategy.
 - Be explicit about org shape, test execution scope, and dependency order.
+- Treat Agentforce Vibes IDE as a developer workstation option, not a replacement for CI, package promotion, or deployment controls.
 
 ## Required Output
 

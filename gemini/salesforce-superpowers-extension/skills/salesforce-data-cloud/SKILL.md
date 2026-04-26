@@ -15,6 +15,7 @@ Design Data Cloud solutions around identity, governance, and activation outcomes
 - Segmentation and activation
 - Data governance, retention, and ownership boundaries
 - Integration with core CRM, Marketing Cloud, and external data platforms
+- Data graph query paths, metadata access, and dataspace-aware developer workflows
 
 ## Rules
 
@@ -22,6 +23,7 @@ Design Data Cloud solutions around identity, governance, and activation outcomes
 - Separate raw ingestion from unified profile outcomes.
 - Define activation targets, freshness expectations, and governance controls.
 - Call out when Data Cloud is the wrong tool for operational CRM transactions.
+- Distinguish operational CRM APIs from Data Cloud graph query and metadata APIs.
 
 ## Required Output
 

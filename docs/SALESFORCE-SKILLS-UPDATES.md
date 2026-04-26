@@ -27,3 +27,8 @@ For each update, append:
 - 2026-04-23
   - Merged Salesforce Skills and Superpowers into `salesforce-superpowers`.
   - Kept Salesforce update tracking focused on development-relevant official Salesforce changes.
+- 2026-04-26
+  - Source areas reviewed: Salesforce Developers Blog Spring '26 developer release guide; Salesforce Developers Blog April 2026 Developer Edition and Hosted MCP announcement.
+  - Changed the merged bundle guidance to cover Agentforce Vibes IDE, Salesforce Hosted MCP versus DX MCP, new integration security defaults, Data Cloud graph-query guidance, and LWC GraphQL-first guidance.
+  - This mattered because these updates change how developers choose dev environments, AI access patterns, integration auth models, and platform-native implementation paths.
+  - Files updated: `plugins/salesforce-superpowers/README.md`, `plugins/salesforce-superpowers/skills/salesforce-superpowers/SKILL.md`, `plugins/salesforce-superpowers/skills/salesforce-agentforce/SKILL.md`, `plugins/salesforce-superpowers/skills/salesforce-integration/SKILL.md`, `plugins/salesforce-superpowers/skills/salesforce-deployment/SKILL.md`, `plugins/salesforce-superpowers/skills/salesforce-data-cloud/SKILL.md`, `plugins/salesforce-superpowers/skills/salesforce-lwc/SKILL.md`, `plugins/salesforce-superpowers/references/integration-pattern-guide.md`.

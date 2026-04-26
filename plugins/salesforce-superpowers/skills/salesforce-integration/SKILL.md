@@ -14,6 +14,7 @@ Design integrations that are resilient, observable, secure, and explicit about s
 - Batch and near-real-time synchronization.
 - Middleware and orchestration with MuleSoft or similar platforms.
 - Authentication, Named Credentials, External Credentials, and secure callout design.
+- External AI access paths such as Salesforce Hosted MCP, invocable actions, and flows.
 
 ## Core Rules
 
@@ -22,6 +23,8 @@ Design integrations that are resilient, observable, secure, and explicit about s
 - Separate transport concerns from business mapping logic.
 - Design explicit error handling, dead-letter or retry strategy, and observability.
 - Minimize synchronous coupling when latency or external failure risk is high.
+- Prefer OAuth-based external client app patterns for new integrations over new connected apps.
+- Do not rely on session IDs in outbound integration patterns.
 
 ## Decision Guide
 
@@ -31,6 +34,7 @@ Design integrations that are resilient, observable, secure, and explicit about s
 - Use SOAP only when required by an existing enterprise contract or managed package boundary.
 - Use Platform Events for loosely coupled async workflows and fan-out consumers.
 - Use CDC when downstream systems need data change streams.
+- Use Salesforce Hosted MCP when an external AI client needs governed access to Salesforce data, invocable actions, or flows without local CLI setup.
 - Use middleware when orchestration, transformation, multi-system coordination, or centralized policy control is needed.
 
 ### Sync Pattern Choice

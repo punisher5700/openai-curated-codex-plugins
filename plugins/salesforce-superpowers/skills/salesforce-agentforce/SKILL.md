@@ -11,6 +11,7 @@ Design agent experiences that are grounded, governed, and operationally safe.
 
 - Agent scope, responsibilities, and escalation boundaries
 - Action design and orchestration
+- Builder mode choices such as canvas logic, scripted paths, and deterministic transitions
 - Prompt and grounding strategy
 - Data access boundaries, guardrails, and compliance controls
 - Human handoff and fallback experience
@@ -21,6 +22,8 @@ Design agent experiences that are grounded, governed, and operationally safe.
 - Keep agent responsibilities narrow and explicit.
 - Define what the agent can read, write, trigger, and escalate.
 - Ground the agent in authoritative Salesforce and external data sources.
+- Call out whether grounding and action access use native Salesforce tools, Salesforce Hosted MCP, or custom APIs.
+- Prefer explicit topic transitions, action sequencing, and variable-based control when predictability matters more than open-ended prompting.
 - Design guardrails for destructive or sensitive actions.
 - Always include human fallback paths.
 
