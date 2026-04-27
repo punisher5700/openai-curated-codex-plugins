@@ -16,6 +16,7 @@ Debug the smallest failing path first. Isolate root cause before proposing redes
 - Integration failures, auth issues, timeout behavior, duplicate delivery
 - LWC or Aura data access and server contract issues
 - Deployment, metadata, and environment drift problems
+- In-org Web Console debugging for logs, SOQL, Query Plan Inspector, Anonymous Apex, and focused Apex inspection or edits
 
 ## Debug Sequence
 
@@ -24,7 +25,8 @@ Debug the smallest failing path first. Isolate root cause before proposing redes
 3. Check security and automation collisions.
 4. Check limits, recursion, and transaction sequencing.
 5. Check async and integration boundaries.
-6. Propose the least invasive safe fix.
+6. Use Web Console when an org-local failure benefits from runtime logs, query plans, Anonymous Apex, or a quick sandbox/non-production Apex fix.
+7. Propose the least invasive safe fix.
 
 ## Response Order
 
@@ -40,3 +42,4 @@ Debug the smallest failing path first. Isolate root cause before proposing redes
 - Do not recommend large rewrites unless the local fix is structurally unsound.
 - Explicitly call out whether the failure is data-specific, config-specific, code-specific, or architecture-specific.
 - When relevant, separate immediate mitigation from long-term improvement.
+- Do not treat Web Console edits as a release process; confirm production is inspect-only for Apex and route durable changes through source control and normal validation.

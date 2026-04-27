@@ -11,6 +11,7 @@ Default behavior:
 - use official Salesforce sources for release-sensitive claims
 - check blast radius before data, security, automation, integration, or deployment changes
 - use planning, TDD, debugging, review, and verification workflows for implementation tasks
+- when Web Console is involved, treat it as an admin-enabled beta for in-org logs, SOQL, Query Plan Inspector, Anonymous Apex, and targeted Apex work; production Apex editing is read-only, and durable changes still need source control and validation
 
 For Salesforce:
 

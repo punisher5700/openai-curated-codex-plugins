@@ -67,6 +67,7 @@ Choose the smallest specialist path:
   - local DX MCP for metadata, tests, Apex, and LWC development
   - Salesforce Hosted MCP for OAuth-based external AI access to data, flows, and invocable actions
   - Agentforce Vibes IDE for browser-hosted, org-aware development in Developer Edition
+- When Web Console is involved, position it as an admin-enabled beta for in-org investigation, logs, SOQL, Query Plan Inspector, Anonymous Apex, and targeted Apex work, with production Apex edit access read-only.
 
 ## Complexity Router
 
