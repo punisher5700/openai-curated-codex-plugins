@@ -23,6 +23,7 @@ Recent official Salesforce coverage reflected in this bundle:
 
 - Spring '26 developer release changes that affect LWC, Apex, integration security, Agentforce, and Data Cloud work
 - April 2026 Developer Edition workflow updates for Agentforce Vibes IDE and Salesforce Hosted MCP Servers
+- April 2026 Agentforce developer documentation terminology: agent topics are now called subagents, with no functional change
 - guidance that distinguishes local DX MCP development workflows from Salesforce-hosted MCP data and action workflows
 
 Skill count:

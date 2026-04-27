@@ -10,6 +10,7 @@ Design agent experiences that are grounded, governed, and operationally safe.
 ## Focus
 
 - Agent scope, responsibilities, and escalation boundaries
+- Subagent structure and legacy topic-to-subagent terminology mapping
 - Action design and orchestration
 - Builder mode choices such as canvas logic, scripted paths, and deterministic transitions
 - Prompt and grounding strategy
@@ -23,7 +24,8 @@ Design agent experiences that are grounded, governed, and operationally safe.
 - Define what the agent can read, write, trigger, and escalate.
 - Ground the agent in authoritative Salesforce and external data sources.
 - Call out whether grounding and action access use native Salesforce tools, Salesforce Hosted MCP, or custom APIs.
-- Prefer explicit topic transitions, action sequencing, and variable-based control when predictability matters more than open-ended prompting.
+- Prefer explicit subagent transitions, action sequencing, and variable-based control when predictability matters more than open-ended prompting.
+- Treat "topics" as the legacy or transition-era name for Agentforce subagents; do not infer a functional difference from the rename alone.
 - Design guardrails for destructive or sensitive actions.
 - Always include human fallback paths.
 
