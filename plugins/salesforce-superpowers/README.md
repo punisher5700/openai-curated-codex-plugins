@@ -26,6 +26,7 @@ Recent official Salesforce coverage reflected in this bundle:
 - April 2026 Web Console beta guidance for in-org debugging, SOQL/query-plan work, Anonymous Apex, and guarded Apex edits
 - April 2026 Prompt Builder Structured Outputs guidance for typed Flow and Apex AI automations
 - April 2026 Agentforce developer documentation terminology: agent topics are now called subagents, with no functional change
+- April 2026 TDX Agentforce Developer Platform guidance for Agent Script, ADLC skills, Agentforce Experience Layer, lifecycle observability/testing APIs, Salesforce Multi-framework beta, and Headless 360 surfaces
 - guidance that distinguishes local DX MCP development workflows from Salesforce-hosted MCP data and action workflows
 
 Skill count:

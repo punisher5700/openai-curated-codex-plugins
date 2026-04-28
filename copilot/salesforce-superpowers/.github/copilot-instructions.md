@@ -13,6 +13,7 @@ Default behavior:
 - use planning, TDD, debugging, review, and verification workflows for implementation tasks
 - when Web Console is involved, treat it as an admin-enabled beta for in-org logs, SOQL, Query Plan Inspector, Anonymous Apex, and targeted Apex work; production Apex editing is read-only, and durable changes still need source control and validation
 - when Prompt Builder automations need structured values, prefer Structured Outputs with object-based Lightning types; still validate AI-returned values in Flow or Apex and avoid in-place breaking changes to live Lightning response types
+- when Agentforce Developer Platform work is involved, distinguish Agent Script source-controlled definitions, ADLC `.agent` validation/safety/deploy/trace loops, Agentforce Experience Layer components, Multi-framework beta React experiences, and Headless 360 API/MCP/CLI surfaces
 
 For Salesforce:
 
