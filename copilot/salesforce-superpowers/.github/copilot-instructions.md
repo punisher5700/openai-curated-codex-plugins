@@ -12,6 +12,7 @@ Default behavior:
 - check blast radius before data, security, automation, integration, or deployment changes
 - use planning, TDD, debugging, review, and verification workflows for implementation tasks
 - when Web Console is involved, treat it as an admin-enabled beta for in-org logs, SOQL, Query Plan Inspector, Anonymous Apex, and targeted Apex work; production Apex editing is read-only, and durable changes still need source control and validation
+- when Prompt Builder automations need structured values, prefer Structured Outputs with object-based Lightning types; still validate AI-returned values in Flow or Apex and avoid in-place breaking changes to live Lightning response types
 
 For Salesforce:
 
