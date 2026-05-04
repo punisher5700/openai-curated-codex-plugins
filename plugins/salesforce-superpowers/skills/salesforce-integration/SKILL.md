@@ -15,6 +15,7 @@ Design integrations that are resilient, observable, secure, and explicit about s
 - Middleware and orchestration with MuleSoft or similar platforms.
 - Authentication, Named Credentials, External Credentials, and secure callout design.
 - External AI access paths such as Salesforce Hosted MCP, invocable actions, and flows.
+- Commerce-specific integration surfaces such as B2C CLI automation, B2C DX MCP, SCAPI, OCAPI, SLAS, Managed Runtime, and eCDN.
 
 ## Core Rules
 
@@ -35,6 +36,8 @@ Design integrations that are resilient, observable, secure, and explicit about s
 - Use Platform Events for loosely coupled async workflows and fan-out consumers.
 - Use CDC when downstream systems need data change streams.
 - Use Salesforce Hosted MCP when an external AI client needs governed access to Salesforce data, invocable actions, or flows without local CLI setup.
+- Use B2C DX MCP only for Commerce Cloud B2C development workflows such as cartridges, Managed Runtime, Custom SCAPI endpoints, Storefront Next, Page Designer, and site theming.
+- Use `@salesforce/b2c-cli` or official B2C GitHub Actions for Commerce Cloud B2C CI/CD automation before maintaining custom shell scripts around legacy tooling.
 - Use middleware when orchestration, transformation, multi-system coordination, or centralized policy control is needed.
 
 ### Sync Pattern Choice

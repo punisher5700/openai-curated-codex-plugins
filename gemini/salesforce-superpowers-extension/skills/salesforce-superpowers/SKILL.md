@@ -66,6 +66,7 @@ Choose the smallest specialist path:
 - When Agentforce, Developer Edition, or MCP are involved, state whether the path is:
   - local DX MCP for metadata, tests, Apex, and LWC development
   - Salesforce Hosted MCP for OAuth-based external AI access to data, flows, and invocable actions
+  - B2C DX MCP for Commerce Cloud B2C cartridge, Managed Runtime, Custom SCAPI, Storefront Next, Page Designer, and site theming workflows
   - Agentforce Vibes IDE for browser-hosted, org-aware development in Developer Edition
 - When Web Console is involved, position it as an admin-enabled beta for in-org investigation, logs, SOQL, Query Plan Inspector, Anonymous Apex, and targeted Apex work, with production Apex edit access read-only.
 - When Agentforce Developer Platform announcements are involved, distinguish:
@@ -74,6 +75,7 @@ Choose the smallest specialist path:
   - Agentforce Experience Layer for reusable interactive components across surfaces
   - Salesforce Multi-framework for beta React app work in scratch orgs and sandboxes, not as an LWC replacement
   - Headless 360, API, MCP, and CLI access as integration surfaces that still require org security, licensing, and release-status checks
+- When B2C Commerce developer tooling is involved, prefer the Salesforce-supported `@salesforce/b2c-cli`, `@salesforce/b2c-tooling-sdk`, official B2C GitHub Actions, SCAPI-first design, and on-demand sandbox cloning with tenant-specific post-clone validation.
 
 ## Complexity Router
 

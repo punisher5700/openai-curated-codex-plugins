@@ -14,6 +14,7 @@ Default behavior:
 - when Web Console is involved, treat it as an admin-enabled beta for in-org logs, SOQL, Query Plan Inspector, Anonymous Apex, and targeted Apex work; production Apex editing is read-only, and durable changes still need source control and validation
 - when Prompt Builder automations need structured values, prefer Structured Outputs with object-based Lightning types; still validate AI-returned values in Flow or Apex and avoid in-place breaking changes to live Lightning response types
 - when Agentforce Developer Platform work is involved, distinguish Agent Script source-controlled definitions, ADLC `.agent` validation/safety/deploy/trace loops, Agentforce Experience Layer components, Multi-framework beta React experiences, and Headless 360 API/MCP/CLI surfaces
+- when B2C Commerce work is involved, prefer Salesforce-supported `@salesforce/b2c-cli`, `@salesforce/b2c-tooling-sdk`, official B2C GitHub Actions, SCAPI-first designs, on-demand sandbox cloning with tenant-specific post-clone checks, and B2C DX MCP only for B2C-specific agent tooling
 
 For Salesforce:
 
