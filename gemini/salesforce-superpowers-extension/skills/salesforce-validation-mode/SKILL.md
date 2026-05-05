@@ -57,9 +57,6 @@ Apply only what matters:
 - bulk trigger behavior
 - Flow/Apex overlap
 - CRUD/FLS/sharing correctness
-- API-version-sensitive Apex access mode behavior
-- `WITH SECURITY_ENFORCED` compatibility for API 67+ code
-- trigger handler access enforcement when trigger context is system mode
 - mixed DML
 - callout sequencing
 

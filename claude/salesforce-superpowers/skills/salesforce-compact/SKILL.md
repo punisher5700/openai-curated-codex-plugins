@@ -103,7 +103,6 @@ Assume these unless the user says otherwise:
 - bulk-safe Apex
 - no SOQL or DML in loops
 - CRUD/FLS/sharing must be respected
-- Apex security defaults can be API-version sensitive; check API 67+ behavior before relying on old system-mode assumptions
 - LWC preferred over Aura
 - Flow preferred only for straightforward automation
 - Apex preferred for complex logic, scale, or reuse
@@ -156,8 +155,6 @@ You may answer from standard platform knowledge, but:
 - Start with the class, trigger, method, or test fix.
 - Mention only the limit or security risk that materially affects the design.
 - Prefer `Map`, `Set`, selector-style querying, and collection-based processing.
-- For API 67+ or Summer '26-sensitive code, make access mode explicit: class sharing, user-mode/system-mode data operations, and `WITH USER_MODE` instead of legacy `WITH SECURITY_ENFORCED`.
-- For trigger work, remember triggers run in system mode; put access-sensitive logic in explicit handler/service code.
 - Include test guidance in one short block unless the user asks for exhaustive coverage design.
 
 ### For LWC tasks
@@ -240,8 +237,6 @@ Check only what is relevant:
 - bulk safety
 - SOQL or DML in loops
 - CRUD/FLS/sharing
-- API 67+ user-mode/system-mode behavior if relevant
-- legacy `WITH SECURITY_ENFORCED` usage if relevant
 - recursion or automation collisions
 - mixed DML
 - row locking

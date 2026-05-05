@@ -13,7 +13,6 @@ private class AccountServiceTest {
             SELECT Id, WhatId, Subject
             FROM Task
             WHERE WhatId = :accountRecord.Id
-            WITH USER_MODE
         ];
 
         System.assertEquals(1, tasks.size());

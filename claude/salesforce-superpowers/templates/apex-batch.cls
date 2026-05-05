@@ -5,7 +5,6 @@ public with sharing class ExampleBatch
         return Database.getQueryLocator([
             SELECT Id, Name
             FROM Account
-            WITH USER_MODE
         ]);
     }
 

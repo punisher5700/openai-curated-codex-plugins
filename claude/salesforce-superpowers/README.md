@@ -28,7 +28,6 @@ Recent official Salesforce coverage reflected in this bundle:
 - April 2026 Agentforce developer documentation terminology: agent topics are now called subagents, with no functional change
 - April 2026 TDX Agentforce Developer Platform guidance for Agent Script, ADLC skills, Agentforce Experience Layer, lifecycle observability/testing APIs, Salesforce Multi-framework beta, and Headless 360 surfaces
 - April 2026 B2C Commerce developer tooling guidance for `@salesforce/b2c-cli`, `@salesforce/b2c-tooling-sdk`, on-demand sandbox cloning, official GitHub Actions, SCAPI-first workflows, CLI safety modes, and B2C DX MCP
-- Summer '26 preview Apex security-default guidance for API 67+ user-mode/system-mode data operations, explicit class sharing, `WITH USER_MODE`, `WITH SECURITY_ENFORCED` compatibility checks, and trigger system-mode review
 - guidance that distinguishes local DX MCP development workflows from Salesforce-hosted MCP data and action workflows
 
 Skill count:

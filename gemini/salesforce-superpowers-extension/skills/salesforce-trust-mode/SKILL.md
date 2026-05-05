@@ -46,7 +46,6 @@ Apply only what matters:
 - integration retry/idempotency
 - governor-limit or record-locking risk
 - release-sensitive platform claims
-- API version sensitive Apex execution behavior
 
 For code review and remediation also check:
 
@@ -57,10 +56,6 @@ For code review and remediation also check:
 - insecure secrets handling
 - unchecked callout endpoints or auth assumptions
 - unsafe deserialization or unvalidated input where relevant
-- reliance on pre-Summer '26 / pre-API 67 Apex security defaults without an explicit API-version check
-- `WITH SECURITY_ENFORCED` usage in code that may compile at API 67+
-- missing explicit user-mode or system-mode intent for SOQL, SOSL, DML, and Database methods when release status makes that material
-- trigger logic that assumes sharing or CRUD/FLS enforcement from the trigger itself instead of delegating to explicit handler/service code
 
 ## Source Rule
 
@@ -72,29 +67,6 @@ When the answer depends on current Salesforce behavior, prefer official Salesfor
 - Salesforce CLI docs
 
 If not verified, say so directly.
-
-## Summer '26 Apex Security Gate
-
-Use this gate when reviewing new Apex, upgrading API versions, or answering release-sensitive Apex security questions.
-
-Treat as release-sensitive unless the user provides the exact org release and class API version.
-
-Check:
-
-- whether the code is API 67 or later
-- whether class sharing is explicit
-- whether data operations intentionally run in user mode or system mode
-- whether `WITH SECURITY_ENFORCED` must be replaced with `WITH USER_MODE`
-- whether trigger handlers enforce access deliberately instead of relying on trigger context
-
-Output compactly:
-
-```text
-API/version risk:
-Security mode:
-Fix:
-Verify:
-```
 
 ## Output Shape
 

@@ -20,5 +20,4 @@ These templates are intentionally generic and safe-by-default:
 - separation-of-concerns friendly
 - security-conscious
 - deployable with adaptation
-- explicit about user-mode data access where appropriate
-- ready for API-version review before use in Summer '26 / API 67+ orgs
+

@@ -17,7 +17,7 @@ public with sharing class AccountService {
         }
 
         if (!tasksToInsert.isEmpty()) {
-            Database.insert(tasksToInsert, AccessLevel.USER_MODE);
+            insert tasksToInsert;
         }
     }
 }
