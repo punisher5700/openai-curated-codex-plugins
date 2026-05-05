@@ -8,6 +8,7 @@ public with sharing class ExternalOrderSyncService {
             SELECT Id, OrderNumber, Status
             FROM Order
             WHERE Id IN :orderIds
+            WITH USER_MODE
         ];
 
         for (Order orderRecord : orders) {

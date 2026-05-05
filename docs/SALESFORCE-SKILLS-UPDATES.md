@@ -62,3 +62,8 @@ For each update, append:
   - Added Summer '26 / API 67 Apex security-default guidance for code review, compact answers, trust gating, validation, and shared CRUD/FLS/sharing reference material.
   - This mattered because the Summer '26 preview includes developer-impacting Apex behavior around user-mode versus system-mode data operations, default class sharing behavior, `WITH SECURITY_ENFORCED` compatibility, and trigger system-mode expectations.
   - Files updated: `plugins/salesforce-superpowers/README.md`, `plugins/salesforce-superpowers/skills/salesforce-superpowers/SKILL.md`, `plugins/salesforce-superpowers/skills/salesforce-trust-mode/SKILL.md`, `plugins/salesforce-superpowers/skills/salesforce-compact/SKILL.md`, `plugins/salesforce-superpowers/skills/salesforce-validation-mode/SKILL.md`, `plugins/salesforce-superpowers/references/sharing-crud-fls-guide.md`, plus synced Claude and Gemini bundle copies.
+- 2026-05-05
+  - Source areas reviewed: same Summer '26 / API 67 Apex security-default review, applied to reusable development artifacts.
+  - Updated Apex templates and delivery/security/code-review checklists to show explicit user-mode SOQL/DML patterns and API-version-sensitive review gates.
+  - This mattered because examples and checklists should reinforce the same secure-by-default guidance as the skills, especially for `WITH USER_MODE`, `AccessLevel.USER_MODE`, `WITH SECURITY_ENFORCED` migration decisions, and trigger handler security assumptions.
+  - Files updated: `plugins/salesforce-superpowers/templates/*`, `plugins/salesforce-superpowers/checklists/*`, plus synced Claude and Gemini bundle copies.

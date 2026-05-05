@@ -8,6 +8,7 @@ public inherited sharing class AccountSelector {
             SELECT Id, Name, OwnerId
             FROM Account
             WHERE Id IN :accountIds
+            WITH USER_MODE
         ];
     }
 }
