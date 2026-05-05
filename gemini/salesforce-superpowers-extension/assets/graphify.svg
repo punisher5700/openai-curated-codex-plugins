@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Graphify logo">
-  <rect width="256" height="256" rx="56" fill="#0F766E"/>
-  <circle cx="72" cy="72" r="24" fill="#CCFBF1"/>
-  <circle cx="184" cy="72" r="24" fill="#99F6E4"/>
-  <circle cx="72" cy="184" r="24" fill="#5EEAD4"/>
-  <circle cx="184" cy="184" r="24" fill="#2DD4BF"/>
-  <path d="M96 72h64M72 96v64M184 96v64M96 184h64M94 94l68 68M162 94 94 162" stroke="#F0FDFA" stroke-width="10" stroke-linecap="round"/>
-</svg>

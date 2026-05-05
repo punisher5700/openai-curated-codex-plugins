@@ -27,13 +27,3 @@ args = [
 ]
 type = "stdio"
 ```
-
-## Claude Project Example
-
-Use:
-
-```bash
-bash claude/create-project-mcp.sh /absolute/path/to/project
-```
-
-That writes a project-local `.mcp.json` pointing to `claude/salesforce-superpowers/skills`.

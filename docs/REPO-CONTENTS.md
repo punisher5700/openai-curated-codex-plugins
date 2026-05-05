@@ -18,12 +18,6 @@ Inside the plugin:
 - `agents/` for agent workflow assets
 - `assets/` for plugin icons
 
-## Cross-Tool Bundles
-
-- `claude/salesforce-superpowers`
-- `gemini/salesforce-superpowers-extension`
-- `copilot/salesforce-superpowers`
-
 ## Included Capabilities
 
 - Salesforce architecture, Apex, LWC, Flow, integrations, deployments, security, Data Cloud, Agentforce, MuleSoft, Marketing Cloud, and industry clouds

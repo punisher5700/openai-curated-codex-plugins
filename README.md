@@ -13,7 +13,6 @@ This single bundle merges:
 - merged graph workflow mode for knowledge graphs, GraphRAG JSON, clustered communities, and graph audit workflows
 - professional codebase documentation workflows
 - MCP skill-hub configuration for tools that can mount the skill bundle
-- Claude, Gemini, and Copilot compatible instruction bundles
 
 ## Codex
 
@@ -28,12 +27,6 @@ Plugin source:
 Codex config points to this marketplace from:
 
 - `~/.codex/config.toml`
-
-## Cross-Tool Bundles
-
-- `claude/`
-- `gemini/`
-- `copilot/`
 
 Install instructions:
 

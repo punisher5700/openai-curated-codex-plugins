@@ -1,25 +1,16 @@
-# Install Everywhere
+# Install in Codex
 
 This repo now exposes one merged Salesforce developer bundle:
 
 - `salesforce-superpowers`
 
-It combines Salesforce Skills and Superpowers into one plugin-like package across Codex, Claude, Gemini, and Copilot.
+It combines Salesforce Skills, Superpowers, Graphify-style graph workflows, trust gates, reviewer workflows, token-saving guidance, memory templates, and documentation modes into one Codex plugin package.
 
-## Support Matrix
+## Supported Surface
 
-| Capability | Codex | Claude | Gemini | Copilot |
-| --- | --- | --- | --- | --- |
-| Salesforce development workflows | Yes | Yes | Yes | Yes |
-| Merged engineering workflow mode | Yes | Yes | Yes | Yes |
-| Merged graph workflow mode | Yes | Yes | Yes | Instruction-only |
-| Professional documentation workflow | Yes | Yes | Yes | Yes |
-| Low-token Salesforce mode | Yes | Yes | Yes | Yes |
-| Trust gates and reviewer skills | Yes | Yes | Yes | Yes |
-| Native Codex plugin format | Yes | No | No | No |
-| MCP skill-hub mount | Yes | Yes | Partial | No |
-
-## Codex
+- Codex plugin marketplace entry
+- Codex skills
+- Codex MCP skill-hub mount
 
 Use this repo as your Codex marketplace source.
 
@@ -27,54 +18,6 @@ Main pieces:
 
 - `.agents/plugins/marketplace.json`
 - `plugins/salesforce-superpowers`
-
-## Claude
-
-From the repo root:
-
-```bash
-bash claude/install-all.sh
-```
-
-Or:
-
-```bash
-bash claude/install-salesforce-superpowers.sh
-```
-
-Optional project MCP:
-
-```bash
-bash claude/create-project-mcp.sh /absolute/path/to/your/project
-```
-
-## Gemini
-
-From the repo root:
-
-```bash
-bash gemini/install-all.sh
-```
-
-Or:
-
-```bash
-bash gemini/install-salesforce-superpowers-extension.sh
-```
-
-## Copilot
-
-From the repo root:
-
-```bash
-bash copilot/install-all.sh /absolute/path/to/project
-```
-
-Or:
-
-```bash
-bash copilot/install-salesforce-superpowers.sh /absolute/path/to/project
-```
 
 ## Included Workflow Coverage
 
