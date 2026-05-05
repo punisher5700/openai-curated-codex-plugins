@@ -76,6 +76,12 @@ Choose the smallest specialist path:
   - Salesforce Multi-framework for beta React app work in scratch orgs and sandboxes, not as an LWC replacement
   - Headless 360, API, MCP, and CLI access as integration surfaces that still require org security, licensing, and release-status checks
 - When B2C Commerce developer tooling is involved, prefer the Salesforce-supported `@salesforce/b2c-cli`, `@salesforce/b2c-tooling-sdk`, official B2C GitHub Actions, SCAPI-first design, and on-demand sandbox cloning with tenant-specific post-clone validation.
+- When Summer '26 / API 67 Apex behavior is involved, check release status and API version before giving security guidance:
+  - new or upgraded Apex can have secure-by-default behavior changes around database access mode and sharing
+  - do not assume old system-mode defaults for SOQL, SOSL, DML, or Database methods when API 67+ is in scope
+  - prefer explicit `WITH USER_MODE` or explicit system-mode choices over legacy `WITH SECURITY_ENFORCED`
+  - require explicit class sharing declarations when reviewing or generating Apex
+  - remember that triggers run in system mode, so access-sensitive logic belongs in explicit handler/service classes
 
 ## Complexity Router
 
